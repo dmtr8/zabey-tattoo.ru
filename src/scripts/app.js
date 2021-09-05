@@ -21,7 +21,6 @@ window.addEventListener('load', function () {
         //left: '100px',
         //color:'#544',
         opacity: 1,
-        color: '#892727',
         easing: 'easeInOutQuad',
         delay: anime.stagger(300, {start: 500})
 
