@@ -1,0 +1,31 @@
+doctype html
+html(lang="en")
+    block sharedVars
+    head
+        title #{pageTitle}
+        meta(name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no")
+        meta(charset='utf-8')
+    body#zabey(class=`${bodyAdditionClass}`)
+        div.inner
+            div.container-fluid
+                div.row
+                    div.col-12
+                        nav.navbar.navbar-expand-lg.navbar-light
+                            a.navbar-brand(href='/')
+                                img.logo(src=require("../images/layout/logo.svg") alt="logo")
+                            button.navbar-toggler(type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation")
+                                span.navbar-toggler-icon
+                            div.collapse.navbar-collapse.justify-content-end(id="navbarSupportedContent")
+                                ul.navbar-nav.ml-auto
+                                    li.nav-item.mx-auto
+                                        a.nav-link.menu-link(href='') главная
+                                    li.nav-item.mx-auto
+                                        a.nav-link.menu-link(href='about.html') запись
+                                    li.nav-item.mx-auto
+                                        a.nav-link.menu-link(href='') эскиз
+                                    li.nav-item.mx-auto
+                                        a.nav-link.menu-link(href='') контакты
+                                    li.nav-item.mx-auto
+                                        a.nav-link.menu-link(href='') faq
+                hr.hr-nav
+        block content

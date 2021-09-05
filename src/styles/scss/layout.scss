@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+.inner {
+  max-width: 1168px;
+  margin: 0 auto;
+
+  @include mediaWidth($widthTablet) {
+    max-width: 1150px;
+  }
+  @include mediaWidth($widthPhone) {
+    max-width: 767px;
+  }
+  @include mediaWidth($widthXs) {
+    max-width: 500px;
+  }
+}
+
+body{
+  background-image: url("/../../images/layout/background.jpg");
+}
+a{
+  text-decoration: none;
+  &:hover{
+    text-decoration: none;
+  }
+}
+
+.logo{
+  width: 60px;
+  height: 60px;
+
+  @include mediaWidth($widthPhone) {
+    width: 55px;
+    height: 55px;
+  }
+  @include mediaWidth($widthXs) {
+    width: 50px;
+    height: 50px;
+  }
+}
+.menu-link{
+  font-family: 'Raleway', sans-serif;
+  font-size: 19px;
+  font-weight: 500;
+  letter-spacing: .1em;
+  margin:0 20px 0;
+  position: relative;
+
+  &:after{
+    content: "";
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: -3;
+    width: 0;
+    height: 2px;
+    background-color: rgba(35, 81, 217, 0.25);
+    transition: width 0.5s;
+  }
+  &:hover:after{
+    content: "";
+    width: 100%;
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -3;
+    height: 2px;
+    background-color: rgba(35, 81, 217, 0.55);
+    transition: width 0.5s;
+  }
+
+  @include mediaWidth($widthTablet) {
+    margin: 0 15px 0;
+  }
+  @include mediaWidth($widthPhone) {
+    font-size: 17px;
+  }
+  @include mediaWidth($widthXs) {
+    font-size: 15px;
+  }
+}
+.navbar-light .navbar-nav .nav-link{
+  color: $colorBlack;
+}
+.hr-nav{
+  color: rgba(40, 62, 81, 0.35);
+  margin-block-start: 0;
+  margin-block-end: 0;
+
+}
+
+
