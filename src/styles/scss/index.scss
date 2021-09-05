@@ -14,105 +14,66 @@
   text-align: center;
 }*/
 
-
-/*
-// TYPOGRAPHY
-@import url("https://fonts.googleapis.com/css?family=Merriweather:400,400i,700");
-$main-font: Merriweather;
-
-// COLORS
-$white: #f2f2f2;
-$primary: #B66C8D;
-
-// GENERAL
-body{
-  font-family: $main-font;
-  font-size: 16px;
+.meeting-block{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 500px;
 }
-
-
-// DEMO STYLES
-#my-section{
+.meeting-block__text{
+  margin-left: 100px;
+}
+.meeting-block__img{
+  margin-right: 100px;
+}
+.button {
+  color: #232323;
+  background: transparent;
+  border: 1px solid #232323;
   position: relative;
+  font-size: 14px;
+  letter-spacing: .3em;
+  font-family: 'Montserrat', sans-serif;
+  padding: 17px 34px 17px 39px;
+  transition: .2s ease-in-out;
+  cursor: pointer;
+  margin: 30px 0 0 0;
 }
-
-#wrap-cta{
+.button:before {
+  content: "";
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(0, -50%);
-  opacity: 0;
-  &.active{
-    z-index: 2;
-    transform: translate(-50%, -50%);
-    transition: transform .6s, opacity .6s;
-    opacity: 1;
-  }
-  #cta{
-    padding: 1rem 2rem;
-    text-transform: uppercase;
-    color: $white;
-    background: transparent;
-    border: 2px solid;
-    border-radius: 5px;
-    cursor: pointer;
-    outline: none;
-    -webkit-tap-highlight-color: transparent;
-    transition: background .4s;
-    &:hover{
-      background: rgba($white, .1);
-    }
-  }
-}
-
-svg{
-  display: block;
+  top: 5px;
+  left: 5px;
   width: 100%;
-  height: 100vh;
-  .polymorph {
-    fill: $primary;
-  }
+  height: 100%;
+  background: #32D4E2;
+  z-index: -1;
+  transition: .25s ease;
+  transform: translate(0, 0);
+}
+.button:hover:before {
+  transform: translate(4px, 4px);
 }
 
-.container{
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-
-  #content{
-    transform: translateY(-50px);
-    opacity: 0;
-    color: $primary;
-    transition: transform .6s .2s, opacity .6s .2s;
-    #close{
-      display: inline-block;
-      margin-top: 2rem;
-      padding: .5rem 1rem;
-      text-transform: uppercase;
-      font-size: .9em;
-      color: $primary;
-      background: transparent;
-      border: 2px solid;
-      border-radius: 5px;
-      cursor: pointer;
-      outline: none;
-      -webkit-tap-highlight-color: transparent;
-      transition: background .4s;
-      &:hover{
-        background: rgba($primary, .3);
-      }
-    }
-    &.active{
-      z-index: 4;
-      transform: translateY(0);
-      opacity: 1;
-    }
-  }
+.title{
+  font-size: 105px;
+  font-family: 'Lobster', cursive;
+  font-weight: 400;
+  letter-spacing: 20px;
+  color: rgba(255, 255, 255, 0);
+  margin-block-end: 0;
+  margin-block-start: 0;
+  margin-left: 200px;
 }
-*/
-
+.h{
+  font-size: 25px;
+  color: rgba(255, 255, 255, 0);
+  margin-block-start: 0;
+  margin-top: -7px;
+  margin-left: 200px;
+  font-family: 'Raleway', sans-serif;
+}
 
 
 
