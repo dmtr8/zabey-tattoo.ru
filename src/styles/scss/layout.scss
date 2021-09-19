@@ -1,9 +1,16 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=New+Rocker&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400&family=Style+Script&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+body{
+  background-image: url("/../../images/layout/background.jpg");
+}
+
+a{
+  text-decoration: none;
+  &:hover{
+    text-decoration: none;
+  }
+}
 
 .inner {
   max-width: 1168px;
@@ -17,16 +24,6 @@
   }
   @include mediaWidth($widthXs) {
     max-width: 500px;
-  }
-}
-
-body{
-  background-image: url("/../../images/layout/background.jpg");
-}
-a{
-  text-decoration: none;
-  &:hover{
-    text-decoration: none;
   }
 }
 
@@ -91,7 +88,6 @@ a{
   color: rgba(40, 62, 81, 0.35);
   margin-block-start: 0;
   margin-block-end: 0;
-
 }
 
 

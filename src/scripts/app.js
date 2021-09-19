@@ -1,20 +1,19 @@
 
 //document.body.style.backgroundImage = "url('../images/layout/background.jpg')";
-
 //import '../images/layout/background.jpg';
 
 import anime from 'animejs/lib/anime.es.js';
-
 require('animejs');
+
 import Vue from 'vue';
 require('bootstrap');
 require('jquery');
 
-let z = document.querySelectorAll('.z');
+let textAnimation = document.querySelectorAll('.text-item--animation');
 
 window.addEventListener('load', function () {
     anime({
-        targets: [z],
+        targets: [textAnimation],
         translateX: -200,
         //endDelay: 1000,
         //direction: 'alternate',
@@ -24,7 +23,9 @@ window.addEventListener('load', function () {
         easing: 'easeInOutQuad',
         delay: anime.stagger(300, {start: 500})
     });
-
 })
+
+
+
 
 
