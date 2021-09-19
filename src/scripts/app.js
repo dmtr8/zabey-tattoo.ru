@@ -23,35 +23,7 @@ window.addEventListener('load', function () {
         opacity: 1,
         easing: 'easeInOutQuad',
         delay: anime.stagger(300, {start: 500})
-
-        //round: 1,
-        //cycles: 1500,
-
-        /*update: function () {
-            document.querySelector('#result').innerHTML = bat.charged;
-        }*/
     });
-
-    /* anime({
-         targets: [img],
-         //width: '20%',
-         //skew:'0deg',
-         rotate: '1turn',
-         scale: 1,
-         easing: 'easeInOutQuad',
-         //direction: 'alternate',
-     });
-     */
-
-    /* anime({
-         targets: [elemOne],
-         translateY:[
-             { value:30, duration: 500, delay: 500},
-             { value:20, duration: 500, delay: 500},
-         ],
-         loop: true
-     });*/
-
 
 })
 
