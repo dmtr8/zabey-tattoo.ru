@@ -1,8 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 
+@font-face {
+  font-family: 'FinistC';
+  src: url("/../../fonts/FinistC.otf") format("opentype");
+}
+
 body{
   background-image: url("/../../images/layout/background.jpg");
+  font-family: 'FinistC', serif;
 }
 
 a{
@@ -10,6 +16,22 @@ a{
   &:hover{
     text-decoration: none;
   }
+}
+
+h2{
+  text-align: center;
+  margin: 90px 0 60px 0;
+  letter-spacing: 5px;
+  font-size: 40px;
+  color: $colorMenu;
+}
+
+p{
+  font-family: 'Raleway', sans-serif;
+}
+
+.carousel-indicators li.active{
+  background-color:  #6D99E9;
 }
 
 .inner {
