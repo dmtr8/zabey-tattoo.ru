@@ -1,4 +1,13 @@
 //meeting-block
+.exempl{
+  width: 100%;
+  height: 650px;
+  background-image: url("/../../images/about/about-one.jpg");
+  object-fit: cover;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: -100px;
+}
 
 .meeting-block{
   display: flex;
@@ -6,7 +15,10 @@
   justify-content: space-between;
   align-items: center;
   height: 500px;
+
+  padding-top: 220px ;
 }
+
 .meeting-block__text-content{
   margin-left: 100px;
 }
@@ -35,32 +47,23 @@
   opacity: 0;
 }
 .meeting-block__button {
-  color: #232323;
+  //color: #232323;
+  color: #eeeeee;
   background: transparent;
-  border: 1px solid #232323;
-  position: relative;
+  border: 1px solid #eeeeee;
+  //border: 1px solid #232323;
+
   font-size: 14px;
   letter-spacing: .3em;
   font-family: 'Raleway', sans-serif;
   padding: 17px 34px 17px 39px;
-  transition: .2s ease-in-out;
   cursor: pointer;
   margin: 30px 0 0 0;
 }
-.meeting-block__button:before {
-  content: "";
-  position: absolute;
-  top: 5px;
-  left: 5px;
-  width: 100%;
-  height: 100%;
-  background: #32D4E2;
-  z-index: -1;
-  transition: .25s ease;
-  transform: translate(0, 0);
-}
-.meeting-block__button:hover:before {
-  transform: translate(4px, 4px);
+.meeting-block__button:hover{
+  color: #eeeeee;
+  background: rgba(238, 238, 238, 0.17);
+  //border: 1px solid rgba(40, 62, 81, 0.22);
 }
 
 .meeting-block__visual{
