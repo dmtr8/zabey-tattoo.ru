@@ -53,4 +53,19 @@ but.forEach(function (elem){
 
 
 
+//console.log(location.href);
+
+let a = document.querySelectorAll('.nav-link.menu-link');
+//console.log(a.length);
+
+if ( document.URL.includes("about.html") ) {
+   for(let i=0; i<=a.length; i++){
+       a[i].style.color = 'red';
+   }
+}else {
+    for(let i=0; i<=a.length; i++){
+        a[i].style.color = 'blue';
+    }
+}
+
 
