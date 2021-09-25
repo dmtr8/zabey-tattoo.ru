@@ -52,20 +52,9 @@ but.forEach(function (elem){
 });
 
 
-
-//console.log(location.href);
-
-let a = document.querySelectorAll('.nav-link.menu-link');
-//console.log(a.length);
-
-if ( document.URL.includes("about.html") ) {
-   for(let i=0; i<=a.length; i++){
-       a[i].style.color = 'red';
-   }
-}else {
-    for(let i=0; i<=a.length; i++){
-        a[i].style.color = 'blue';
+let menuLink = document.querySelectorAll('.nav-link.menu-link');
+if ( document.URL !== "http://localhost:3000/" ) {
+    for (let i = 0; i <= menuLink.length; i++) {
+        menuLink[i].style.color = '#3f5791';
     }
 }
-
-
