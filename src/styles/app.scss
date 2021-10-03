@@ -1,13 +1,14 @@
 @import "scss/vars";
-@import "scss/main";
 @import "scss/index";
 @import "scss/layout";
 @import "scss/about";
 @import "scss/faq";
 
+//npm -g uninstall bootstrap-icons
 
 @import "../../node_modules/normalize.css/normalize.css";
 @import '../../node_modules/bootstrap/dist/css/bootstrap.min.css';
+
 
 
 

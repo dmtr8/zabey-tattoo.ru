@@ -52,9 +52,16 @@ but.forEach(function (elem){
 });
 
 
+/*
+
 let menuLink = document.querySelectorAll('.nav-link.menu-link');
 if ( document.URL !== "http://localhost:3000/" ) {
     for (let i = 0; i <= menuLink.length; i++) {
         menuLink[i].style.color = '#3f5791';
     }
 }
+*/
+
+let data = new Date();
+let footerData = document.querySelector('.footer__data').innerHTML = '2020 - ' + data.getFullYear();
+

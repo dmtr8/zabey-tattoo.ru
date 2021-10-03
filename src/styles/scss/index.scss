@@ -3,11 +3,15 @@
 .exempl{
   width: 100%;
   height: 650px;
-  background-image: url("/../../images/index/img.jpg");
+  background-image: url("/../../images/index/meeting.jpg");
   object-fit: cover;
   background-repeat: no-repeat;
   background-size: cover;
   margin-top: -100px;
+
+  @include mediaWidth(991) {
+    margin-top: 0;
+  }
 }
 
 .meeting-block{
@@ -24,17 +28,22 @@
   margin-left: 100px;
 }
 .meeting-block__heading{
-  font-size: 160px;
-  font-weight: 400;
+  //font-size: 160px;
+  font-size: 100px;
+  //font-weight: 400;
   letter-spacing: 20px;
-  margin-block-end: 0;
-  font-family: 'FinistC', serif;
+  //margin-block-end: 0;
+  //font-family: 'FinistC', serif;
+  font-family: 'Lobster', serif;
   background: linear-gradient(90deg, #E0EAFC 0%, #CFDEF3 100%);
 }
 .meeting-block__title{
-  font-size: 25px;
-  margin-block-start: 0;
-  margin-top: -39px;
+  font-size: 23px;
+  letter-spacing: 1px;
+  font-weight: 500;
+  //margin-block-start: 0;
+  //margin-top: -39px;
+  margin-top: -25px;
   font-family: 'Raleway', sans-serif;
   background: linear-gradient(90deg, #E0EAFC 0%, #CFDEF3 100%);
 }
@@ -82,7 +91,7 @@
   font-family: 'Raleway', sans-serif;
   text-align: center;
   font-weight: 500;
-  color: $colorMenu;
+  color: $colorBlue;
   font-size: 16px;
   @include mediaWidth($widthTablet) {
     display: none;

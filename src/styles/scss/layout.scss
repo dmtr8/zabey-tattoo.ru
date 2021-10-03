@@ -1,6 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap');
 @font-face {
   font-family: 'FinistC';
   src: url("/../../fonts/FinistC.otf") format("opentype");
@@ -10,30 +9,6 @@ body{
   background-image: url("/../../images/layout/background.jpg");
   font-family: 'FinistC', serif;
 }
-
-a{
-  text-decoration: none;
-  &:hover{
-    text-decoration: none;
-  }
-}
-
-h2{
-  text-align: center;
-  margin: 90px 0 60px 0;
-  letter-spacing: 5px;
-  font-size: 40px;
-  color: $colorMenu;
-}
-
-p{
-  font-family: 'Raleway', sans-serif;
-}
-
-.carousel-indicators li.active{
-  background-color:  #6D99E9;
-}
-
 .inner {
   max-width: 1168px;
   margin: 0 auto;
@@ -49,6 +24,25 @@ p{
   }
 }
 
+p{
+  font-family: 'Raleway', sans-serif;
+}
+h2{
+  text-align: center;
+  margin: 90px 0 60px 0;
+  letter-spacing: 5px;
+  font-size: 40px;
+  color: $colorBlue;
+}
+a{
+  text-decoration: none;
+  &:hover{
+    text-decoration: none;
+  }
+}
+
+/*------menu------*/
+
 .logo{
   width: 60px;
   height: 60px;
@@ -62,15 +56,15 @@ p{
     height: 50px;
   }
 }
+.menu-list{
+  width: 30px;
+  height: 30px;
+}
 .menu-link{
-  //font-family: 'Raleway', sans-serif;
-  //font-size: 19px;
   font-weight: 500;
   letter-spacing: .1em;
   margin:0 20px 0;
   position: relative;
-
-  font-family: 'FinistC', serif;
   font-size: 30px;
 
   &:after{
@@ -98,34 +92,55 @@ p{
 
   @include mediaWidth($widthTablet) {
     margin: 0 15px 0;
+    padding: .3rem 1rem;
   }
   @include mediaWidth($widthPhone) {
-    font-size: 17px;
+    font-size: 27px;
+    padding: .2rem 1rem;
   }
   @include mediaWidth($widthXs) {
-    font-size: 15px;
+    font-size: 25px;
   }
 }
 .navbar-light .navbar-nav .nav-link{
-  color: #eeeeee;
-  @include mediaWidth($widthTablet) {
-    color: $colorMenu;
-  }
-}
-.navbar-light .navbar-nav .nav-link:hover{
-  color: #eeeeee;
-  @include mediaWidth($widthTablet) {
-    color: $colorMenu;
+  color: $colorBlue;
+  &:hover{
+    color: $colorBlue;
   }
 }
 .hr-nav{
   color: rgba(40, 62, 81, 0.35);
   margin-block-start: 0;
   margin-block-end: 0;
-}
-.footer{
-  width: 100%;
-  height: 40px;
-  background-color: #283E51;
+  @include mediaWidth($widthPhone) {
+    display: none;
+  }
 }
 
+/*--------footer---------*/
+
+.footer{
+  width: 100%;
+  height: 60px;
+  background-color: #283E51;
+}
+.footer__box{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  @include mediaWidth($widthTablet) {
+    justify-content: space-around;
+  }
+}
+.footer__media{
+  width: 23px;
+  height: 23px;
+  margin: 0 5px;
+}
+.footer__data{
+  color: #eeeeee;
+  font-size: 12px;
+  margin-block-end: 0;
+}

@@ -13,14 +13,14 @@ html(lang="en")
                         nav.navbar.navbar-expand-lg.navbar-light
                             a.navbar-brand(href='/')
                                 img.logo(src=require("../images/layout/logo.svg") alt="logo")
-                            button.navbar-toggler(type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation")
-                                span.navbar-toggler-icon
+                            button.navbar-toggler(type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="border:none")
+                                img.menu-list(src=require("../images/layout/menu-list.svg") alt="menu")
                             div.collapse.navbar-collapse.justify-content-end(id="navbarSupportedContent")
                                 ul.navbar-nav.ml-auto
                                     li.nav-item.mx-auto
-                                        a.nav-link.menu-link.jjj(href='/') главная
+                                        a.nav-link.menu-link(href='/') главная
                                     li.nav-item.mx-auto
-                                        a.nav-link.menu-link.jjj(href='') запись
+                                        a.nav-link.menu-link(href='') запись
                                     li.nav-item.mx-auto
                                         a.nav-link.menu-link(href='') эскиз
                                     li.nav-item.mx-auto
@@ -30,3 +30,10 @@ html(lang="en")
                 hr.hr-nav
         block content
         footer.footer
+            section.inner
+                div.footer__box
+                    div.footer__social-media
+                        img.footer__media(src=require("../images/index/instagram.svg") alt="instagram")
+                        img.footer__media(src=require("../images/index/vk.svg") alt="vk")
+                    p.footer__data
+
