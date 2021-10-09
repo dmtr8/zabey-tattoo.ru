@@ -5,17 +5,17 @@ append sharedVars
     - const bodyAdditionClass = '';
     - const pageAdditionClass = 'main-page';
 block content
-    div.exempl
+    div.meeting-container
         section.inner
             div.meeting-block
                 div.meeting-block__text-content
                     h1.meeting-block__heading.text-item.text-item--animation Zабей
                     p.meeting-block__title.text-item.text-item--animation Студия татуировки в Туле
-                    //a(href='about.html')
+                    a(href='about.html')
                         button.meeting-block__button О НАС
                 div.meeting-block__visual
                     //<iframe id="64375027-9291-48b7-b3e5-2929131287d3" src="https://www.vectary.com/viewer/v1/?model=64375027-9291-48b7-b3e5-2929131287d3&env=cedarbridge&showPreloader=0&showInteractionPrompt=0" frameborder="0" width="100%" height="480"></iframe>
-    //section.inner
+    section.inner
         h2 УСЛУГИ
         div.container
             div.row
@@ -24,44 +24,44 @@ block content
                         p.services__title БЕСПЛАТНАЯ КОНСУЛЬТАЦИЯ
                         p.services__title.services__title--mobile КОНСУЛЬТАЦИЯ
                         a(href='/')
-                            div.block-decor
-                                div.bg-hover
-                                img(src=require("../images/index/consultation.svg"))
+                            div.services__block-decor
+                                div.services__circle
+                                img(src=require("../images/index/consultation.svg") alt="consultation img")
                 div.col
                     div.services
                         p.services__title ИНДИВИДУАЛЬНЫЙ ЭСКИЗ
                         p.services__title.services__title--mobile ЭСКИЗ
                         a(href='/')
-                            div.block-decor
-                                div.bg-hover
-                                img(src=require("../images/index/sketch.svg"))
+                            div.services__block-decor
+                                div.services__circle
+                                img(src=require("../images/index/sketch.svg") alt="sketch img")
                 div.col
                     div.services
                         p.services__title ХУДОЖЕСТВЕННАЯ ТАТУИРОВКА
                         p.services__title.services__title--mobile ТАТУИРОВКА
                         a(href='/')
-                            div.block-decor
-                                div.bg-hover
-                                img(src=require("../images/index/tattoo.svg"))
+                            div.services__block-decor
+                                div.services__circle
+                                img(src=require("../images/index/tattoo.svg") alt="tattoo img")
         h2 МАСТЕРА
         section.masters
                 div.master-card
                     div.master
-                        img.master__photo(src=require("../images/index/osipova.jpg"))
+                        img.master__photo(src=require("../images/index/osipova.jpg") alt="master photo")
                         div.master__wrapper
                             p.master__name Ксения
                             p.master__specialty цветная татуировка
                             a(href='/')
                                 button.master__button ПОДРОБНЕЕ
                     div.master
-                        img.master__photo(src=require("../images/index/kovaleva.jpg"))
+                        img.master__photo(src=require("../images/index/kovaleva.jpg") alt="master photo")
                         div.master__wrapper
                             p.master__name Мария
                             p.master__specialty графика
                             a(href='/')
                                 button.master__button ПОДРОБНЕЕ
                     div.master
-                        img.master__photo(src=require("../images/index/volkova.jpg"))
+                        img.master__photo(src=require("../images/index/volkova.jpg") alt="master photo")
                         div.master__wrapper
                             p.master__name Ксения
                             p.master__specialty черно-белый реализм
@@ -71,87 +71,96 @@ block content
         div.container
             div.row
                 div.col-10.mx-auto
-                    div#slider.carousel.carousel-dark.slide(data-ride="carousel")
+                    div#slider.carousel.carousel-dark.slide(data-bs-ride="carousel")
                         ol.carousel-indicators
-                            li.active(data-target="#slider" data-slide-to="0")
-                            li(data-target="#slider" data-slide-to="1")
-                            li(data-target="#slider" data-slide-to="2")
-                            li(data-target="#slider" data-slide-to="3")
-                            li(data-target="#slider" data-slide-to="4")
-                            li(data-target="#slider" data-slide-to="5")
-                            li(data-target="#slider" data-slide-to="6")
-                            li(data-target="#slider" data-slide-to="7")
-                            li(data-target="#slider" data-slide-to="8")
+                            li.active(data-bs-target="#slider" data-bs-slide-to="0")
+                            li(data-bs-target="#slider" data-bs-slide-to="1")
+                            li(data-bs-target="#slider" data-bs-slide-to="2")
+                            li(data-bs-target="#slider" data-bs-slide-to="3")
+                            li(data-bs-target="#slider" data-bs-slide-to="4")
+                            li(data-bs-target="#slider" data-bs-slide-to="5")
+                            li(data-bs-target="#slider" data-bs-slide-to="6")
+                            li(data-bs-target="#slider" data-bs-slide-to="7")
+                            li(data-bs-target="#slider" data-bs-slide-to="8")
                         div.carousel-inner
                             div.carousel-item.active
-                                img.img-slider.d-block.mx-auto(src=require("../images/lastwork/a.jpg"))
+                                img.img-slider.d-block.mx-auto(src=require("../images/lastwork/a.jpg") alt="last work photo")
                                 div.carousel-caption.d-none.d-md-block
-                                    h5 Ксения Осипова
+                                    h5.sl-text Мастер :
+                                    p.sl-text Ксения Осипова
                             div.carousel-item
-                                img.img-slider.d-block.mx-auto(src=require("../images/lastwork/b.jpg"))
+                                img.img-slider.d-block.mx-auto(src=require("../images/lastwork/b.jpg") alt="last work photo")
                                 div.carousel-caption.d-none.d-md-block
-                                    h5 Мария Ковалева
+                                    h5 Мастер :
+                                    p Мария Ковалева
                             div.carousel-item
-                                img.img-slider.d-block.mx-auto(src=require("../images/lastwork/c.jpg"))
+                                img.img-slider.d-block.mx-auto(src=require("../images/lastwork/c.jpg") alt="last work photo")
                                 div.carousel-caption.d-none.d-md-block
-                                    h5 Ксения Волкова
+                                    h5 Мастер :
+                                    p Ксения Осипова
                             div.carousel-item
-                                img.img-slider.d-block.mx-auto(src=require("../images/lastwork/d.jpg"))
+                                img.img-slider.d-block.mx-auto(src=require("../images/lastwork/d.jpg") alt="last work photo")
                                 div.carousel-caption.d-none.d-md-block
-                                    h5 Ксения Осипова
+                                    h5 Мастер :
+                                    p Ксения Осипова
                             div.carousel-item
-                                img.img-slider.d-block.mx-auto(src=require("../images/lastwork/e.jpg"))
+                                img.img-slider.d-block.mx-auto(src=require("../images/lastwork/e.jpg") alt="last work photo")
                                 div.carousel-caption.d-none.d-md-block
-                                    h5 Мария Ковалева
+                                    h5 Мастер :
+                                    p Ксения Осипова
                             div.carousel-item
-                                img.img-slider.d-block.mx-auto(src=require("../images/lastwork/f.jpg"))
+                                img.img-slider.d-block.mx-auto(src=require("../images/lastwork/f.jpg") alt="last work photo")
                                 div.carousel-caption.d-none.d-md-block
-                                    h5 Ксения Волкова
+                                    h5 Мастер :
+                                    p Ксения Волкова
                             div.carousel-item
-                                img.img-slider.d-block.mx-auto(src=require("../images/lastwork/g.jpg"))
+                                img.img-slider.d-block.mx-auto(src=require("../images/lastwork/g.jpg") alt="last work photo")
                                 div.carousel-caption.d-none.d-md-block
-                                    h5 Ксения Осипова
+                                    h5 Мастер :
+                                    p Ксения Волкова
                             div.carousel-item
-                                img.img-slider.d-block.mx-auto(src=require("../images/lastwork/h.jpg"))
+                                img.img-slider.d-block.mx-auto(src=require("../images/lastwork/h.jpg") alt="last work photo")
                                 div.carousel-caption.d-none.d-md-block
-                                    h5 Мария Ковалева
+                                    h5 Мастер :
+                                    p Ксения Волкова
                             div.carousel-item
-                                img.img-slider.d-block.mx-auto(src=require("../images/lastwork/b.jpg"))
+                                img.img-slider.d-block.mx-auto(src=require("../images/lastwork/b.jpg") alt="last work photo")
                                 div.carousel-caption.d-none.d-md-block
-                                    h5 Ксения Волкова
-                        a.carousel-control-prev(href='#slider' role="button" data-slide="prev")
+                                    h5 Мастер :
+                                    p Ксения Волкова
+                        button.carousel-control-prev(type="button" data-bs-target="#slider"  data-bs-slide="prev")
                             span.carousel-control-prev-icon(aria-hidden="true")
-                            span.sr-only Previous
-                        a.carousel-control-next(href='#slider' role="button" data-slide="next")
+                            span.sr-only
+                        button.carousel-control-next(type="button" data-bs-target="#slider"  data-bs-slide="next")
                             span.carousel-control-next-icon(aria-hidden="true")
-                            span.sr-only Next
+                            span.sr-only
         h2 КОНТАКТЫ
-        section.contact-wrap
-            div.contact__information-field
-                div.wrap-content-box.wrap-content-box--margin-mobile
-                    div.contact-content
-                        img.contact-content__svg(src=require("../images/index/phone.svg"))
-                        p.contact-content__title +7 (950) 904-34-25
-                    div.contact-content
-                        img.contact-content__svg(src=require("../images/index/map.svg"))
-                        p.contact-content__title.contact-content__title--margin-top Тула, ул.Демидовская #[br] (Заречье), дом 74
-                div.working-hours.working-hours--margin-mobile
-                    p.working-hours__title Время работы :
-                    div.working-hours__box
-                        p.working-hours__title.working-hours__title--color Пн-Пт:
-                        p.contact-content__title 10:00 - 20:00
-                    div.working-hours__box
-                        p.working-hours__title.working-hours__title--color Сб-Вс:
-                        p.contact-content__title Выходной
-                div.map-social-media.map-social-media--margin-mobile
-                    p.working-hours__title Мы в социальных сетях :
-                    div.social-media
+        section.contacts
+            div.contacts__information-field
+                div.contacts__address.contacts__address--margin-mobile
+                    div.address-content
+                        img.address-content__svg(src=require("../images/index/map.svg") alt="address img")
+                        p.contacts__title Тула, ул.Демидовская #[br] (Заречье), дом 74
+                    div.address-content.address-content--mt
+                        img.address-content__svg(src=require("../images/index/phone.svg") alt="phone img")
+                        p.contacts__title.contacts__title--mt +7 (950) 904-34-25
+                div.contacts__working-hours.contacts__working-hours--margin-mobile
+                    p.contacts__title.contacts__title--size Время работы :
+                    div.working-hours-content
+                        p.working-hours-content__title Пн-Пт:
+                        p.contacts__title 10:00 - 20:00
+                    div.working-hours-content.working-hours-content--mt
+                        p.working-hours-content__title Сб-Вс:
+                        p.contacts__title Выходной
+                div.contacts__social-media.contacts__social-media--margin-mobile
+                    p.contacts__title.contacts__title--size Мы в социальных сетях :
+                    div.social-media-content
                         a(href='https://www.instagram.com/zabey_tattoostudio/' target="_blank")
-                            img.social-media__img(src=require("../images/index/instagram.svg"))
+                            img.social-media-content__img(src=require("../images/index/instagram.svg") alt="instagram")
                         a(href='https://vk.com/zabey_tattoostudio' target="_blank")
-                            img.social-media__img(src=require("../images/index/vk.svg"))
-            div.contact-wrap__map-field
-                div.contact-wrap__map
+                            img.social-media-content__img(src=require("../images/index/vk.svg") alt="vk")
+            div.contacts__map-field
+                div.contacts__map
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2332.883084943039!2d37.61873731587154!3d54.217557980170874!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x413440964d1361c3%3A0x222dfb06b4a302e4!2z0JTQtdC80LjQtNC-0LLRgdC60LDRjyDRg9C7LiwgNzQsINCi0YPQu9CwLCDQotGD0LvRjNGB0LrQsNGPINC-0LHQuy4sIDMwMDA1Nw!5e0!3m2!1sru!2sru!4v1616870716708!5m2!1sru!2sru" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
 
 

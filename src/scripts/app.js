@@ -26,14 +26,14 @@ window.addEventListener('load', function () {
 })
 
 //page index block services
-let block = document.querySelectorAll('.block-decor');
+let block = document.querySelectorAll('.services__block-decor');
 block.forEach(function (i){
     i.addEventListener('mouseover', function (e) {
-        let current = i.closest('div').querySelector('.bg-hover');
+        let current = i.closest('div').querySelector('.services__circle');
         current.style.display = "block"
     });
     i.addEventListener('mouseout', function (e) {
-        let current = i.closest('div').querySelector('.bg-hover');
+        let current = i.closest('div').querySelector('.services__circle');
         current.style.display = "none"
     });
 });
@@ -62,6 +62,6 @@ if ( document.URL !== "http://localhost:3000/" ) {
 }
 */
 
-let data = new Date();
-let footerData = document.querySelector('.footer__data').innerHTML = '2020 - ' + data.getFullYear();
+let date = new Date();
+let footerDate = document.querySelector('.footer__date').innerHTML = '2020 - ' + date.getFullYear();
 

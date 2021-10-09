@@ -24,7 +24,7 @@ body{
   }
 }
 
-p{
+p, button{
   font-family: 'Raleway', sans-serif;
 }
 h2{
@@ -139,7 +139,7 @@ a{
   height: 23px;
   margin: 0 5px;
 }
-.footer__data{
+.footer__date{
   color: #eeeeee;
   font-size: 12px;
   margin-block-end: 0;
