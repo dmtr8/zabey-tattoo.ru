@@ -4,7 +4,6 @@
   font-family: 'FinistC';
   src: url("/../../fonts/FinistC.otf") format("opentype");
 }
-
 body{
   background-image: url("/../../images/layout/background.jpg");
   font-family: 'FinistC', serif;
@@ -23,7 +22,6 @@ body{
     max-width: 500px;
   }
 }
-
 p, button{
   font-family: 'Raleway', sans-serif;
 }
@@ -33,6 +31,9 @@ h2{
   letter-spacing: 5px;
   font-size: 40px;
   color: $colorBlue;
+  @include mediaWidth($widthXs) {
+    margin: 70px 0 30px 0;
+  }
 }
 a{
   text-decoration: none;
@@ -89,7 +90,6 @@ a{
     background-color: rgba(35, 81, 217, 0.55);
     transition: width 0.5s;
   }
-
   @include mediaWidth($widthTablet) {
     margin: 0 15px 0;
     padding: .3rem 1rem;
@@ -99,7 +99,7 @@ a{
     padding: .2rem 1rem;
   }
   @include mediaWidth($widthXs) {
-    font-size: 25px;
+    font-size: 30px;
   }
 }
 .navbar-light .navbar-nav .nav-link{
@@ -123,6 +123,9 @@ a{
   width: 100%;
   height: 60px;
   background-color: #283E51;
+  @include mediaWidth($widthXs) {
+    display: none;
+  }
 }
 .footer__box{
   display: flex;

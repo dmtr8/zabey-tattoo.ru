@@ -51,6 +51,9 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-left: 200px;
+  @include mediaWidth($widthXs) {
+    display: none;
+  }
 }
 .text-item--animation{
   opacity: 0;
@@ -64,19 +67,28 @@
   padding: 15px 31px 15px 35px;
   cursor: pointer;
   margin: 20px 0 0 0;
+  @include mediaWidth($widthXs) {
+    display: none;
+  }
 }
 .meeting-block__button:hover{
   color: #eeeeee;
   background: rgba(238, 238, 238, 0.17);
 }
-
 .meeting-block__visual{
   margin-right: 100px;
 }
 
 //services
-
 .services{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  @include mediaWidth($widthXs) {
+    flex-direction: column;
+  }
+}
+.services__box{
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -93,12 +105,20 @@
     display: none;
     margin-bottom: 2px;
   }
+  @include mediaWidth($widthXs) {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
 }
 .services__title--mobile{
   display: none;
   @include mediaWidth($widthTablet) {
     display: block;
     margin-bottom: 10px;
+  }
+  @include mediaWidth($widthXs) {
+    display: none;
   }
 }
 .services__block-decor{
@@ -118,6 +138,10 @@
     width: 150px;
     height: 150px;
   }
+  @include mediaWidth($widthXs) {
+    width: 80vw;
+    box-shadow: 0px -2px 80px rgba(82, 137, 210, 0.13), 0px -0.250431px 10.0172px rgba(82, 137, 210, 0.065);
+  }
   img{
     z-index: 2;
     @include mediaWidth($widthTablet) {
@@ -127,6 +151,10 @@
        width: 55px;
        height: 55px;
      }
+    @include mediaWidth($widthXs) {
+      width: 70px;
+      height: 70px;
+    }
   }
 }
 .services__circle{
@@ -157,10 +185,15 @@
   justify-content: space-around;
   @include mediaWidth($widthTablet) {
     width: 100%;
-    overflow: auto;
+    //overflow: auto;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+  }
+  @include mediaWidth($widthXs) {
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
   }
 }
 .master{
@@ -181,9 +214,18 @@
     height: 270px;
     margin: 0 10px 0 10px;
   }
+  @include mediaWidth($widthXs) {
+    width: 70vw;
+    height: 340px;
+    margin: 10px;
+    box-shadow: 0px -2px 80px rgba(21, 84, 170, 0.13), 0px -0.250431px 10.0172px rgba(21, 84, 170, 0.065);
+  }
 }
 .master:hover{
   box-shadow: 0px -7px 80px rgba(42, 79, 160, 0.12), 0px -3.23631px 36.9864px rgba(42, 79, 160, 0.0880224), 0px -1.85174px 21.1628px rgba(42, 79, 160, 0.069806), 0px -1.124px 12.8457px rgba(42, 79, 160, 0.0544984), 0px -0.677257px 7.74008px rgba(42, 79, 160, 0.0406396), 0px -0.37714px 4.31018px rgba(42, 79, 160, 0.0275912), 0px -0.162205px 1.85378px rgba(42, 79, 160, 0.0148405);
+  @include mediaWidth($widthXs) {
+    box-shadow: none;
+  }
 }
 .master__photo{
   width: 250px;
@@ -198,6 +240,10 @@
     width: 150px;
     height: 150px;
   }
+  @include mediaWidth($widthXs) {
+    width: 200px;
+    height: 200px;
+  }
 }
 .master p{
   text-align: center;
@@ -211,6 +257,9 @@
   @include mediaWidth($widthPhone) {
     font-size: 15px;
   }
+  @include mediaWidth($widthXs) {
+    font-size: 18px;
+  }
 }
 .master__specialty{
   font-size: 17px;
@@ -221,6 +270,9 @@
   margin-block-start: 0;
   @include mediaWidth($widthPhone) {
     font-size: 14px;
+  }
+  @include mediaWidth($widthXs) {
+    font-size: 16px;
   }
 }
 .master__button{
@@ -243,6 +295,13 @@
     font-size: 14px;
     padding: 3px;
   }
+  @include mediaWidth($widthXs) {
+    font-size: 15px;
+    width: 150px;
+    height: 40px;
+    border-radius: 15px;
+    display: block;
+  }
 }
 
 //last work
@@ -260,6 +319,9 @@
     height: 300px;
   }
 }
+#slider ol.carousel-indicators li.active{
+  background-color: #eeeeee;
+}
 
 //contacts
 
@@ -267,6 +329,10 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  @include mediaWidth($widthXs) {
+    flex-direction: column;
+    justify-content: space-between;
+  }
 }
 .contacts__information-field{
   width: 350px;
@@ -346,7 +412,7 @@
     margin-left: 30%;
   }
   @include mediaWidth($widthXs) {
-    margin-left: 20%;
+    margin-left: 10%;
   }
 }
 .contacts__map-field{
@@ -356,10 +422,17 @@
   @include mediaWidth($widthPhone) {
     display: none;
   }
+  @include mediaWidth($widthXs) {
+    display: block;
+    width: 100vh;
+  }
 }
 .contacts__map iframe{
   width: 100%;
   height: 600px;
+  @include mediaWidth($widthXs) {
+    height: 300px;
+  }
 }
 
 
