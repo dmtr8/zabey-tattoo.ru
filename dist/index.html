@@ -4,18 +4,18 @@
     <title>Главная</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta charset="utf-8">
-  <link href="styles/app.css" rel="stylesheet" integrity="sha384-wGgog4hluIffdzz+ZOidexeEScvBg79e/WnFIiJr6MKiZowqTaEej3GyLgj+hyQE" crossorigin="anonymous"></head>
+  <link href="styles/app.css" rel="stylesheet" integrity="sha384-y+19ifkweFU4sWiwPoPATomc557L71gwzuxZf+w6XcGtbCDnNF5tU+UbkEsNXVM1" crossorigin="anonymous"></head>
   <body id="zabey">
     <section class="inner">
       <div class="container-fluid">
         <div class="row">
           <div class="col-12">
             <nav class="navbar navbar-expand-lg navbar-light"><a class="navbar-brand" href="/"><img class="logo" src="images/layout/logo.svg" alt="logo"></a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" style="border:none"><img class="menu-list" src="images/layout/menu-list.svg" alt="menu"></button>
               <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto">
-                  <li class="nav-item mx-auto"><a class="nav-link menu-link jjj" href="/">главная</a></li>
-                  <li class="nav-item mx-auto"><a class="nav-link menu-link jjj" href="">запись</a></li>
+                  <li class="nav-item mx-auto"><a class="nav-link menu-link" href="/">главная</a></li>
+                  <li class="nav-item mx-auto"><a class="nav-link menu-link" href="">запись</a></li>
                   <li class="nav-item mx-auto"><a class="nav-link menu-link" href="">эскиз</a></li>
                   <li class="nav-item mx-auto"><a class="nav-link menu-link" href="">контакты</a></li>
                   <li class="nav-item mx-auto"><a class="nav-link menu-link" href="faq.html">faq</a></li>
@@ -27,7 +27,7 @@
         <hr class="hr-nav">
       </div>
     </section>
-    <div class="exempl">
+    <div class="meeting-container">
       <section class="inner">
         <div class="meeting-block">
           <div class="meeting-block__text-content">
@@ -42,65 +42,48 @@
       </section>
     </div>
     <section class="inner">
-      <!--div.meeting-block
-      div.meeting-block__text-content
-          h1.meeting-block__heading.text-item.text-item--animation Zабей
-          p.meeting-block__title.text-item.text-item--animation Студия татуировки в Туле
-          a(href='about.html')
-              button.meeting-block__button О НАС
-      div.meeting-block__visual
-          //<iframe id="64375027-9291-48b7-b3e5-2929131287d3" src="https://www.vectary.com/viewer/v1/?model=64375027-9291-48b7-b3e5-2929131287d3&env=cedarbridge&showPreloader=0&showInteractionPrompt=0" frameborder="0" width="100%" height="480"></iframe>
-      -->
       <h2>УСЛУГИ</h2>
-      <div class="container">
-        <div class="row">
-          <div class="col">
-            <div class="services">
-              <p class="services__title">БЕСПЛАТНАЯ КОНСУЛЬТАЦИЯ</p>
-              <p class="services__title services__title--mobile">КОНСУЛЬТАЦИЯ</p><a href="/">
-                <div class="block-decor">
-                  <div class="bg-hover"></div><img src="images/index/consultation.svg">
-                </div></a>
-            </div>
-          </div>
-          <div class="col">
-            <div class="services">
-              <p class="services__title">ИНДИВИДУАЛЬНЫЙ ЭСКИЗ</p>
-              <p class="services__title services__title--mobile">ЭСКИЗ</p><a href="/">
-                <div class="block-decor">
-                  <div class="bg-hover"></div><img src="images/index/sketch.svg">
-                </div></a>
-            </div>
-          </div>
-          <div class="col">
-            <div class="services">
-              <p class="services__title">ХУДОЖЕСТВЕННАЯ ТАТУИРОВКА</p>
-              <p class="services__title services__title--mobile">ТАТУИРОВКА</p><a href="/">
-                <div class="block-decor">
-                  <div class="bg-hover"></div><img src="images/index/tattoo.svg">
-                </div></a>
-            </div>
-          </div>
+      <div class="services">
+        <div class="services__box">
+          <p class="services__title">БЕСПЛАТНАЯ КОНСУЛЬТАЦИЯ</p>
+          <p class="services__title services__title--mobile">КОНСУЛЬТАЦИЯ</p><a href="/">
+            <div class="services__block-decor">
+              <div class="services__circle"></div><img src="images/index/consultation.svg" alt="consultation img">
+            </div></a>
+        </div>
+        <div class="services__box">
+          <p class="services__title">ИНДИВИДУАЛЬНЫЙ ЭСКИЗ</p>
+          <p class="services__title services__title--mobile">ЭСКИЗ</p><a href="/">
+            <div class="services__block-decor">
+              <div class="services__circle"></div><img src="images/index/sketch.svg" alt="sketch img">
+            </div></a>
+        </div>
+        <div class="services__box">
+          <p class="services__title">ХУДОЖЕСТВЕННАЯ ТАТУИРОВКА</p>
+          <p class="services__title services__title--mobile">ТАТУИРОВКА</p><a href="/">
+            <div class="services__block-decor">
+              <div class="services__circle"></div><img src="images/index/tattoo.svg" alt="tattoo img">
+            </div></a>
         </div>
       </div>
       <h2>МАСТЕРА</h2>
       <section class="masters">
         <div class="master-card">
-          <div class="master"><img class="master__photo" src="images/index/osipova.jpg">
+          <div class="master"><img class="master__photo" src="images/index/osipova.jpg" alt="master photo">
             <div class="master__wrapper">
               <p class="master__name">Ксения</p>
               <p class="master__specialty">цветная татуировка</p><a href="/">
                 <button class="master__button">ПОДРОБНЕЕ</button></a>
             </div>
           </div>
-          <div class="master"><img class="master__photo" src="images/index/kovaleva.jpg">
+          <div class="master"><img class="master__photo" src="images/index/kovaleva.jpg" alt="master photo">
             <div class="master__wrapper">
               <p class="master__name">Мария</p>
               <p class="master__specialty">графика</p><a href="/">
                 <button class="master__button">ПОДРОБНЕЕ</button></a>
             </div>
           </div>
-          <div class="master"><img class="master__photo" src="images/index/volkova.jpg">
+          <div class="master"><img class="master__photo" src="images/index/volkova.jpg" alt="master photo">
             <div class="master__wrapper">
               <p class="master__name">Ксения</p>
               <p class="master__specialty">черно-белый реализм</p><a href="/">
@@ -113,101 +96,118 @@
       <div class="container">
         <div class="row">
           <div class="col-10 mx-auto">
-            <div class="carousel carousel-dark slide" id="slider" data-ride="carousel">
+            <div class="carousel carousel-dark slide" id="slider" data-bs-ride="carousel">
               <ol class="carousel-indicators">
-                <li class="active" data-target="#slider" data-slide-to="0"></li>
-                <li data-target="#slider" data-slide-to="1"></li>
-                <li data-target="#slider" data-slide-to="2"></li>
-                <li data-target="#slider" data-slide-to="3"></li>
-                <li data-target="#slider" data-slide-to="4"></li>
-                <li data-target="#slider" data-slide-to="5"></li>
-                <li data-target="#slider" data-slide-to="6"></li>
-                <li data-target="#slider" data-slide-to="7"></li>
-                <li data-target="#slider" data-slide-to="8"></li>
+                <li class="active" data-bs-target="#slider" data-bs-slide-to="0"></li>
+                <li data-bs-target="#slider" data-bs-slide-to="1"></li>
+                <li data-bs-target="#slider" data-bs-slide-to="2"></li>
+                <li data-bs-target="#slider" data-bs-slide-to="3"></li>
+                <li data-bs-target="#slider" data-bs-slide-to="4"></li>
+                <li data-bs-target="#slider" data-bs-slide-to="5"></li>
+                <li data-bs-target="#slider" data-bs-slide-to="6"></li>
+                <li data-bs-target="#slider" data-bs-slide-to="7"></li>
+                <li data-bs-target="#slider" data-bs-slide-to="8"></li>
               </ol>
               <div class="carousel-inner">
-                <div class="carousel-item active"><img class="img-slider d-block mx-auto" src="images/lastwork/a.jpg">
+                <div class="carousel-item active"><img class="img-slider d-block mx-auto" src="images/lastwork/a.jpg" alt="last work photo">
                   <div class="carousel-caption d-none d-md-block">
-                    <h5>Ксения Осипова</h5>
+                    <h5 class="sl-text">Мастер :</h5>
+                    <p class="sl-text">Ксения Осипова</p>
                   </div>
                 </div>
-                <div class="carousel-item"><img class="img-slider d-block mx-auto" src="images/lastwork/b.jpg">
+                <div class="carousel-item"><img class="img-slider d-block mx-auto" src="images/lastwork/b.jpg" alt="last work photo">
                   <div class="carousel-caption d-none d-md-block">
-                    <h5>Мария Ковалева</h5>
+                    <h5>Мастер :</h5>
+                    <p>Мария Ковалева</p>
                   </div>
                 </div>
-                <div class="carousel-item"><img class="img-slider d-block mx-auto" src="images/lastwork/c.jpg">
+                <div class="carousel-item"><img class="img-slider d-block mx-auto" src="images/lastwork/c.jpg" alt="last work photo">
                   <div class="carousel-caption d-none d-md-block">
-                    <h5>Ксения Волкова</h5>
+                    <h5>Мастер :</h5>
+                    <p>Ксения Осипова</p>
                   </div>
                 </div>
-                <div class="carousel-item"><img class="img-slider d-block mx-auto" src="images/lastwork/d.jpg">
+                <div class="carousel-item"><img class="img-slider d-block mx-auto" src="images/lastwork/d.jpg" alt="last work photo">
                   <div class="carousel-caption d-none d-md-block">
-                    <h5>Ксения Осипова</h5>
+                    <h5>Мастер :</h5>
+                    <p>Ксения Осипова</p>
                   </div>
                 </div>
-                <div class="carousel-item"><img class="img-slider d-block mx-auto" src="images/lastwork/e.jpg">
+                <div class="carousel-item"><img class="img-slider d-block mx-auto" src="images/lastwork/e.jpg" alt="last work photo">
                   <div class="carousel-caption d-none d-md-block">
-                    <h5>Мария Ковалева</h5>
+                    <h5>Мастер :</h5>
+                    <p>Ксения Осипова</p>
                   </div>
                 </div>
-                <div class="carousel-item"><img class="img-slider d-block mx-auto" src="images/lastwork/f.jpg">
+                <div class="carousel-item"><img class="img-slider d-block mx-auto" src="images/lastwork/f.jpg" alt="last work photo">
                   <div class="carousel-caption d-none d-md-block">
-                    <h5>Ксения Волкова</h5>
+                    <h5>Мастер :</h5>
+                    <p>Ксения Волкова</p>
                   </div>
                 </div>
-                <div class="carousel-item"><img class="img-slider d-block mx-auto" src="images/lastwork/g.jpg">
+                <div class="carousel-item"><img class="img-slider d-block mx-auto" src="images/lastwork/g.jpg" alt="last work photo">
                   <div class="carousel-caption d-none d-md-block">
-                    <h5>Ксения Осипова</h5>
+                    <h5>Мастер :</h5>
+                    <p>Ксения Волкова</p>
                   </div>
                 </div>
-                <div class="carousel-item"><img class="img-slider d-block mx-auto" src="images/lastwork/h.jpg">
+                <div class="carousel-item"><img class="img-slider d-block mx-auto" src="images/lastwork/h.jpg" alt="last work photo">
                   <div class="carousel-caption d-none d-md-block">
-                    <h5>Мария Ковалева</h5>
+                    <h5>Мастер :</h5>
+                    <p>Ксения Волкова</p>
                   </div>
                 </div>
-                <div class="carousel-item"><img class="img-slider d-block mx-auto" src="images/lastwork/b.jpg">
+                <div class="carousel-item"><img class="img-slider d-block mx-auto" src="images/lastwork/b.jpg" alt="last work photo">
                   <div class="carousel-caption d-none d-md-block">
-                    <h5>Ксения Волкова</h5>
+                    <h5>Мастер :</h5>
+                    <p>Ксения Волкова</p>
                   </div>
                 </div>
-              </div><a class="carousel-control-prev" href="#slider" role="button" data-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="sr-only">Previous</span></a><a class="carousel-control-next" href="#slider" role="button" data-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="sr-only">Next</span></a>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#slider" data-bs-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="sr-only"></span></button>
+              <button class="carousel-control-next" type="button" data-bs-target="#slider" data-bs-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="sr-only"></span></button>
             </div>
           </div>
         </div>
       </div>
       <h2>КОНТАКТЫ</h2>
-      <section class="contact-wrap">
-        <div class="contact__information-field">
-          <div class="wrap-content-box wrap-content-box--margin-mobile">
-            <div class="contact-content"><img class="contact-content__svg" src="images/index/phone.svg">
-              <p class="contact-content__title">+7 (950) 904-34-25</p>
+      <section class="contacts">
+        <div class="contacts__information-field">
+          <div class="contacts__address contacts__address--margin-mobile">
+            <div class="address-content"><img class="address-content__svg" src="images/index/map.svg" alt="address">
+              <p class="contacts__title">Тула, ул.Демидовская <br> (Заречье), дом 74</p>
             </div>
-            <div class="contact-content"><img class="contact-content__svg" src="images/index/map.svg">
-              <p class="contact-content__title contact-content__title--margin-top">Тула, ул.Демидовская <br> (Заречье), дом 74</p>
-            </div>
-          </div>
-          <div class="working-hours working-hours--margin-mobile">
-            <p class="working-hours__title">Время работы :</p>
-            <div class="working-hours__box">
-              <p class="working-hours__title working-hours__title--color">Пн-Пт:</p>
-              <p class="contact-content__title">10:00 - 20:00</p>
-            </div>
-            <div class="working-hours__box">
-              <p class="working-hours__title working-hours__title--color">Сб-Вс:</p>
-              <p class="contact-content__title">Выходной</p>
+            <div class="address-content address-content--mt"><img class="address-content__svg" src="images/index/phone.svg" alt="phone">
+              <p class="contacts__title contacts__title--mt">+7 (950) 904-34-25</p>
             </div>
           </div>
-          <div class="map-social-media map-social-media--margin-mobile">
-            <p class="working-hours__title">Мы в социальных сетях :</p>
-            <div class="social-media"><a href="https://www.instagram.com/zabey_tattoostudio/" target="_blank"><img class="social-media__img" src="images/index/instagram.svg"></a><a href="https://vk.com/zabey_tattoostudio" target="_blank"><img class="social-media__img" src="images/index/vk.svg"></a></div>
+          <div class="contacts__working-hours contacts__working-hours--margin-mobile">
+            <p class="contacts__title contacts__title--size">Время работы :</p>
+            <div class="working-hours-content">
+              <p class="working-hours-content__title">Пн-Пт:</p>
+              <p class="contacts__title">10:00 - 20:00</p>
+            </div>
+            <div class="working-hours-content working-hours-content--mt">
+              <p class="working-hours-content__title">Сб-Вс:</p>
+              <p class="contacts__title">Выходной</p>
+            </div>
+          </div>
+          <div class="contacts__social-media contacts__social-media--margin-mobile">
+            <p class="contacts__title contacts__title--size">Мы в социальных сетях :</p>
+            <div class="social-media-content"><a href="https://www.instagram.com/zabey_tattoostudio/" target="_blank"><img class="social-media-content__img" src="images/index/instagram.svg" alt="instagram"></a><a href="https://vk.com/zabey_tattoostudio" target="_blank"><img class="social-media-content__img" src="images/index/vk.svg" alt="vk"></a></div>
           </div>
         </div>
-        <div class="contact-wrap__map-field">
-          <div class="contact-wrap__map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2332.883084943039!2d37.61873731587154!3d54.217557980170874!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x413440964d1361c3%3A0x222dfb06b4a302e4!2z0JTQtdC80LjQtNC-0LLRgdC60LDRjyDRg9C7LiwgNzQsINCi0YPQu9CwLCDQotGD0LvRjNGB0LrQsNGPINC-0LHQuy4sIDMwMDA1Nw!5e0!3m2!1sru!2sru!4v1616870716708!5m2!1sru!2sru" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe></div>
+        <div class="contacts__map-field">
+          <div class="contacts__map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2332.883084943039!2d37.61873731587154!3d54.217557980170874!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x413440964d1361c3%3A0x222dfb06b4a302e4!2z0JTQtdC80LjQtNC-0LLRgdC60LDRjyDRg9C7LiwgNzQsINCi0YPQu9CwLCDQotGD0LvRjNGB0LrQsNGPINC-0LHQuy4sIDMwMDA1Nw!5e0!3m2!1sru!2sru!4v1616870716708!5m2!1sru!2sru" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe></div>
         </div>
       </section>
     </section>
-    <footer class="footer"></footer>
-  <script type="text/javascript" src="scripts/app.js" integrity="sha384-5mG3SR6KOtFMO3D/a2/HgMgwmcR2M4n0TpEFlFuROiHVluAwbq5fsROut9Zu6Yxi" crossorigin="anonymous"></script></body>
+    <footer class="footer">
+      <section class="inner">
+        <div class="footer__box">
+          <p class="footer__date"></p>
+        </div>
+      </section>
+    </footer>
+  <script type="text/javascript" src="scripts/app.js" integrity="sha384-FvAUZbioipL/lhRF3+AOHOIB3bF4uvc+GV6SE5U7pbtACKHzfnGjl8fBxHdtKbmu" crossorigin="anonymous"></script></body>
 </html>

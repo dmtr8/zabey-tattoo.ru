@@ -31,8 +31,12 @@ h2{
   letter-spacing: 5px;
   font-size: 40px;
   color: $colorBlue;
-  @include mediaWidth($widthXs) {
+  @include mediaWidth($widthPhone) {
     margin: 70px 0 30px 0;
+  }
+  @include mediaWidth($widthXs) {
+    font-size: 35px;
+    margin: 65px 0 35px 0;
   }
 }
 a{
@@ -95,11 +99,11 @@ a{
     padding: .3rem 1rem;
   }
   @include mediaWidth($widthPhone) {
-    font-size: 27px;
+    font-size: 31px;
     padding: .2rem 1rem;
   }
   @include mediaWidth($widthXs) {
-    font-size: 30px;
+    font-size: 25px;
   }
 }
 .navbar-light .navbar-nav .nav-link{
@@ -130,17 +134,9 @@ a{
 .footer__box{
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: flex-end;
   align-items: center;
   height: 60px;
-  @include mediaWidth($widthTablet) {
-    justify-content: space-around;
-  }
-}
-.footer__media{
-  width: 23px;
-  height: 23px;
-  margin: 0 5px;
 }
 .footer__date{
   color: #eeeeee;

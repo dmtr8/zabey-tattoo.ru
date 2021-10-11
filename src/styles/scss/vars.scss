@@ -2,8 +2,9 @@ $colorBlack: rgba(49, 49, 49, 0.75);
 $colorBlue: #3f5791;
 
 $widthTablet: 1150;
+$widthLg: 992;
 $widthPhone: 767;
-$widthXs: 500;
+$widthXs: 576;
 
 @mixin mediaWidth($media-width) {
     @media screen and (max-width: #{$media-width}px) {

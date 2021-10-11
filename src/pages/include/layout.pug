@@ -23,8 +23,15 @@ html(lang="en")
                                         a.nav-link.menu-link(href='') запись
                                     li.nav-item.mx-auto
                                         a.nav-link.menu-link(href='') эскиз
-                                    li.nav-item.mx-auto
-                                        a.nav-link.menu-link(href='') контакты
+                                    li.nav-item.dropdown.mx-auto
+                                        a.nav-link.menu-link(id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false") мастера
+                                        ul.dropdown-menu(aria-labelledby="navbarDropdown")
+                                            li
+                                                a.dropdown-item(href="#") Ксения Осипова
+                                            li
+                                                a.dropdown-item(href="#") Мария Ковалева
+                                            li
+                                                a.dropdown-item(href="#") Ксения Волкова
                                     li.nav-item.mx-auto
                                         a.nav-link.menu-link(href='faq.html') faq
                 hr.hr-nav
@@ -32,8 +39,5 @@ html(lang="en")
         footer.footer
             section.inner
                 div.footer__box
-                    div.footer__social-media
-                        img.footer__media(src=require("../images/index/instagram.svg") alt="instagram")
-                        img.footer__media(src=require("../images/index/vk.svg") alt="vk")
                     p.footer__date
 

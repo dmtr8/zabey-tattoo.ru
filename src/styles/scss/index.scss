@@ -94,6 +94,15 @@
   justify-content: center;
   align-items: center;
   height: 250px;
+  @include mediaWidth($widthXs) {
+      height: 200px;
+  }
+}
+.services .services__box:nth-child(1),
+.services__box:nth-child(2){
+  @include mediaWidth($widthXs) {
+    margin-bottom:40px;
+  }
 }
 .services__title{
   text-align: center;
@@ -102,20 +111,27 @@
   font-size: 16px;
   letter-spacing: 1px;
   @include mediaWidth($widthTablet) {
-    display: none;
+    //display: none;
     margin-bottom: 2px;
+  }
+  @include mediaWidth($widthPhone) {
+   display: none;
   }
   @include mediaWidth($widthXs) {
     display: block;
     margin-bottom: 10px;
-    font-weight: bold;
+    font-weight: 500;
   }
 }
 .services__title--mobile{
   display: none;
   @include mediaWidth($widthTablet) {
-    display: block;
+    //display: block;
     margin-bottom: 10px;
+  }
+  @include mediaWidth($widthPhone) {
+    display: block;
+    font-weight: 600;
   }
   @include mediaWidth($widthXs) {
     display: none;
@@ -135,10 +151,11 @@
     height: 200px;
   }
   @include mediaWidth($widthPhone) {
-    width: 150px;
+    width: 30vw;
     height: 150px;
   }
   @include mediaWidth($widthXs) {
+    background-color: #ffffff;
     width: 80vw;
     box-shadow: 0px -2px 80px rgba(82, 137, 210, 0.13), 0px -0.250431px 10.0172px rgba(82, 137, 210, 0.065);
   }
@@ -147,10 +164,11 @@
     @include mediaWidth($widthTablet) {
       width: 85px;
       height: 85px;
-    }@include mediaWidth($widthPhone) {
-       width: 55px;
-       height: 55px;
-     }
+    }
+    @include mediaWidth($widthPhone) {
+       width: 65px;
+       height: 65px;
+    }
     @include mediaWidth($widthXs) {
       width: 70px;
       height: 70px;
@@ -185,7 +203,6 @@
   justify-content: space-around;
   @include mediaWidth($widthTablet) {
     width: 100%;
-    //overflow: auto;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -218,14 +235,12 @@
     width: 70vw;
     height: 340px;
     margin: 10px;
+    background-color: #ffffff;
     box-shadow: 0px -2px 80px rgba(21, 84, 170, 0.13), 0px -0.250431px 10.0172px rgba(21, 84, 170, 0.065);
   }
 }
 .master:hover{
   box-shadow: 0px -7px 80px rgba(42, 79, 160, 0.12), 0px -3.23631px 36.9864px rgba(42, 79, 160, 0.0880224), 0px -1.85174px 21.1628px rgba(42, 79, 160, 0.069806), 0px -1.124px 12.8457px rgba(42, 79, 160, 0.0544984), 0px -0.677257px 7.74008px rgba(42, 79, 160, 0.0406396), 0px -0.37714px 4.31018px rgba(42, 79, 160, 0.0275912), 0px -0.162205px 1.85378px rgba(42, 79, 160, 0.0148405);
-  @include mediaWidth($widthXs) {
-    box-shadow: none;
-  }
 }
 .master__photo{
   width: 250px;
@@ -315,8 +330,8 @@
     height: 400px;
   }
   @include mediaWidth($widthXs) {
-    width: 300px;
-    height: 300px;
+    width: 350px;
+    height: 400px;
   }
 }
 #slider ol.carousel-indicators li.active{
@@ -381,7 +396,7 @@
 .contacts__title--size{
   margin: 15px 0;
   color: $colorBlue;
-  font-weight: bold;
+  font-weight: 600;
 }
 .working-hours-content{
   display:flex;
@@ -424,7 +439,7 @@
   }
   @include mediaWidth($widthXs) {
     display: block;
-    width: 100vh;
+    width: 100%;
   }
 }
 .contacts__map iframe{

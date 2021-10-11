@@ -15,10 +15,6 @@ window.addEventListener('load', function () {
     anime({
         targets: [textAnimation],
         translateX: -200,
-        //endDelay: 1000,
-        //direction: 'alternate',
-        //left: '100px',
-        //color:'#544',
         opacity: 1,
         easing: 'easeInOutQuad',
         delay: anime.stagger(300, {start: 500})
@@ -40,6 +36,7 @@ block.forEach(function (i){
 
 //page index block masters
 let but = document.querySelectorAll('.master');
+
 but.forEach(function (elem){
     elem.addEventListener('mouseover', function (e) {
         let cur = elem.closest('div').querySelector('.master__button');
@@ -50,7 +47,6 @@ but.forEach(function (elem){
         cur.style.display = "none"
     });
 });
-
 
 /*
 
