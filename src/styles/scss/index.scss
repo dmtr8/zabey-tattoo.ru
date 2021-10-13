@@ -94,12 +94,11 @@
   justify-content: center;
   align-items: center;
   height: 250px;
-  @include mediaWidth($widthXs) {
-      height: 200px;
+  @include mediaWidth($widthPhone) {
+    height: 200px;
   }
 }
-.services .services__box:nth-child(1),
-.services__box:nth-child(2){
+.services__box--m-b{
   @include mediaWidth($widthXs) {
     margin-bottom:40px;
   }
@@ -120,7 +119,6 @@
   @include mediaWidth($widthXs) {
     display: block;
     margin-bottom: 10px;
-    font-weight: 500;
   }
 }
 .services__title--mobile{
@@ -131,7 +129,7 @@
   }
   @include mediaWidth($widthPhone) {
     display: block;
-    font-weight: 600;
+    font-weight: 500;
   }
   @include mediaWidth($widthXs) {
     display: none;
@@ -227,9 +225,8 @@
     margin: 0 10px 0 10px;
   }
   @include mediaWidth($widthPhone) {
-    width: 250px;
-    height: 270px;
-    margin: 0 10px 0 10px;
+    width: 40vw;
+    height: 300px;
   }
   @include mediaWidth($widthXs) {
     width: 70vw;
@@ -252,8 +249,8 @@
     height: 200px;
   }
   @include mediaWidth($widthPhone) {
-    width: 150px;
-    height: 150px;
+    width: 170px;
+    height: 170px;
   }
   @include mediaWidth($widthXs) {
     width: 200px;
@@ -270,9 +267,6 @@
   margin-top: 10px;
   margin-block-end: 0;
   @include mediaWidth($widthPhone) {
-    font-size: 15px;
-  }
-  @include mediaWidth($widthXs) {
     font-size: 18px;
   }
 }
@@ -284,7 +278,8 @@
   margin: 10px 0 15px 0;
   margin-block-start: 0;
   @include mediaWidth($widthPhone) {
-    font-size: 14px;
+    font-size: 15px;
+    margin-bottom: 15px;
   }
   @include mediaWidth($widthXs) {
     font-size: 16px;
@@ -303,19 +298,15 @@
   cursor: pointer;
   margin: 0 auto;
   @include mediaWidth($widthPhone) {
-    display: block;
     width: 150px;
-    height: 30px;
-    border-radius: 15px;
+    height: 36px;
+    border-radius: 10px;
     font-size: 14px;
-    padding: 3px;
   }
   @include mediaWidth($widthXs) {
     font-size: 15px;
-    width: 150px;
     height: 40px;
     border-radius: 15px;
-    display: block;
   }
 }
 
@@ -327,7 +318,7 @@
   object-fit: cover;
   @include mediaWidth($widthPhone) {
     width: 400px;
-    height: 400px;
+    height: 450px;
   }
   @include mediaWidth($widthXs) {
     width: 350px;
@@ -344,6 +335,9 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
+  @include mediaWidth($widthPhone) {
+    flex-direction: column;
+  }
   @include mediaWidth($widthXs) {
     flex-direction: column;
     justify-content: space-between;
@@ -373,9 +367,6 @@
 .contacts__address{
   display: flex;
   flex-direction: column;
-  @include mediaWidth(680) {
-    margin: 10px;
-  }
 }
 .address-content{
   display: flex;
@@ -420,6 +411,11 @@
     height: 30px;
   }
 }
+.contacts__address--margin-mobile{
+  @include mediaWidth($widthPhone) {
+    margin-top: 15px;
+  }
+}
 .contacts__address--margin-mobile,
 .contacts__working-hours--margin-mobile,
 .contacts__social-media--margin-mobile{
@@ -435,7 +431,8 @@
   position: relative;
   z-index: 1;
   @include mediaWidth($widthPhone) {
-    display: none;
+    display: block;
+    width: 100%;
   }
   @include mediaWidth($widthXs) {
     display: block;
@@ -445,6 +442,9 @@
 .contacts__map iframe{
   width: 100%;
   height: 600px;
+  @include mediaWidth($widthPhone) {
+    height: 350px;
+  }
   @include mediaWidth($widthXs) {
     height: 300px;
   }

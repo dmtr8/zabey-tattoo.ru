@@ -35,8 +35,8 @@ block.forEach(function (i){
 });
 
 //page index block masters
-let but = document.querySelectorAll('.master');
 
+let but = document.querySelectorAll('.master');
 but.forEach(function (elem){
     elem.addEventListener('mouseover', function (e) {
         let cur = elem.closest('div').querySelector('.master__button');
@@ -47,6 +47,26 @@ but.forEach(function (elem){
         cur.style.display = "none"
     });
 });
+
+/*
+let but = document.querySelectorAll('.master');
+let mB = document.querySelectorAll('.master__button');
+let clW = document.documentElement.clientWidth;
+
+but.forEach(function (elem){
+    let cur = elem.closest('div').querySelector('.master__button');
+    if (clW >= 993){
+        elem.addEventListener('mouseover', function (e) {
+            cur.style.display = "block"
+        });
+        elem.addEventListener('mouseout', function (e) {
+            cur.style.display = "none"
+        });
+    }else {
+        cur.style.display = "block";
+    }
+});
+*/
 
 /*
 

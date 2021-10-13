@@ -4,7 +4,7 @@
     <title>Главная</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta charset="utf-8">
-  <link href="styles/app.css" rel="stylesheet" integrity="sha384-y+19ifkweFU4sWiwPoPATomc557L71gwzuxZf+w6XcGtbCDnNF5tU+UbkEsNXVM1" crossorigin="anonymous"></head>
+  <link href="styles/app.css" rel="stylesheet" integrity="sha384-YvRDMDq/UCqRGmD7rvCb60G3J/vaqVfGPiBPE2uNf6P04dKRIaarjy8oFfloiYN5" crossorigin="anonymous"></head>
   <body id="zabey">
     <section class="inner">
       <div class="container-fluid">
@@ -17,7 +17,13 @@
                   <li class="nav-item mx-auto"><a class="nav-link menu-link" href="/">главная</a></li>
                   <li class="nav-item mx-auto"><a class="nav-link menu-link" href="">запись</a></li>
                   <li class="nav-item mx-auto"><a class="nav-link menu-link" href="">эскиз</a></li>
-                  <li class="nav-item mx-auto"><a class="nav-link menu-link" href="">контакты</a></li>
+                  <li class="nav-item dropdown mx-auto"><a class="nav-link menu-link" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">мастера</a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="#">Ксения Осипова</a></li>
+                      <li><a class="dropdown-item" href="#">Мария Ковалева</a></li>
+                      <li><a class="dropdown-item" href="#">Ксения Волкова</a></li>
+                    </ul>
+                  </li>
                   <li class="nav-item mx-auto"><a class="nav-link menu-link" href="faq.html">faq</a></li>
                 </ul>
               </div>
@@ -164,8 +170,8 @@
                   </div>
                 </div>
               </div>
-              <button class="carousel-control-prev" type="button" data-bs-target="#slider" data-bs-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="sr-only"></span></button>
-              <button class="carousel-control-next" type="button" data-bs-target="#slider" data-bs-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="sr-only"></span></button>
+              <button class="d-none d-md-block carousel-control-prev" type="button" data-bs-target="#slider" data-bs-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="sr-only"></span></button>
+              <button class="d-none d-md-block carousel-control-next" type="button" data-bs-target="#slider" data-bs-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="sr-only"></span></button>
             </div>
           </div>
         </div>

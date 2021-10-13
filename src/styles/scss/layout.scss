@@ -106,12 +106,22 @@ a{
     font-size: 25px;
   }
 }
+a.dropdown-item.dropdown-item--size{
+  font-family: 'Raleway', sans-serif;
+  color: $colorBlack;
+  font-size: 15px;
+  @include mediaWidth($widthXs) {
+    font-size: 13px;
+  }
+}
+
 .navbar-light .navbar-nav .nav-link{
   color: $colorBlue;
   &:hover{
     color: $colorBlue;
   }
 }
+
 .hr-nav{
   color: rgba(40, 62, 81, 0.35);
   margin-block-start: 0;
