@@ -99,7 +99,7 @@ a{
     padding: .3rem 1rem;
   }
   @include mediaWidth($widthPhone) {
-    font-size: 31px;
+    font-size: 29px;
     padding: .2rem 1rem;
   }
   @include mediaWidth($widthXs) {
@@ -114,14 +114,12 @@ a.dropdown-item.dropdown-item--size{
     font-size: 13px;
   }
 }
-
 .navbar-light .navbar-nav .nav-link{
   color: $colorBlue;
   &:hover{
     color: $colorBlue;
   }
 }
-
 .hr-nav{
   color: rgba(40, 62, 81, 0.35);
   margin-block-start: 0;
@@ -141,6 +139,7 @@ a.dropdown-item.dropdown-item--size{
     display: none;
   }
 }
+/*
 .footer__box{
   display: flex;
   flex-direction: row;
@@ -153,3 +152,5 @@ a.dropdown-item.dropdown-item--size{
   font-size: 12px;
   margin-block-end: 0;
 }
+*/
+

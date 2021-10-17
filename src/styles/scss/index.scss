@@ -1,4 +1,3 @@
-
 //meeting-block
 
 .meeting-container{
@@ -9,7 +8,6 @@
   background-repeat: no-repeat;
   background-size: cover;
   margin-top: -100px;
-
   @include mediaWidth(991) {
     margin-top: 0;
   }
@@ -51,7 +49,7 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   margin-left: 200px;
-  @include mediaWidth($widthXs) {
+  @include mediaWidth($widthPhone) {
     display: none;
   }
 }
@@ -67,7 +65,7 @@
   padding: 15px 31px 15px 35px;
   cursor: pointer;
   margin: 20px 0 0 0;
-  @include mediaWidth($widthXs) {
+  @include mediaWidth($widthPhone) {
     display: none;
   }
 }
@@ -80,6 +78,7 @@
 }
 
 //services
+
 .services{
   display: flex;
   flex-direction: row;
@@ -110,11 +109,10 @@
   font-size: 16px;
   letter-spacing: 1px;
   @include mediaWidth($widthTablet) {
-    //display: none;
     margin-bottom: 2px;
   }
-  @include mediaWidth($widthPhone) {
-   display: none;
+  @include mediaWidth($widthLg) {
+    display: none;
   }
   @include mediaWidth($widthXs) {
     display: block;
@@ -123,12 +121,14 @@
 }
 .services__title--mobile{
   display: none;
-  @include mediaWidth($widthTablet) {
-    //display: block;
-    margin-bottom: 10px;
+  @include mediaWidth($widthLg) {
+    display: block;
+    font-size: 17px;
+    letter-spacing: 2px;
+    font-weight: 600;
   }
   @include mediaWidth($widthPhone) {
-    display: block;
+    font-size: 16px;
     font-weight: 500;
   }
   @include mediaWidth($widthXs) {
@@ -144,9 +144,9 @@
   justify-content: center;
   align-items: center;
   position: relative;
-  @include mediaWidth($widthTablet) {
-    width: 200px;
-    height: 200px;
+  @include mediaWidth($widthLg) {
+    width: 30vw;
+    height: 180px;
   }
   @include mediaWidth($widthPhone) {
     width: 30vw;
@@ -162,6 +162,10 @@
     @include mediaWidth($widthTablet) {
       width: 85px;
       height: 85px;
+    }
+    @include mediaWidth($widthLg) {
+      width: 75px;
+      height: 75px;
     }
     @include mediaWidth($widthPhone) {
        width: 65px;
@@ -221,8 +225,12 @@
   padding: 10px;
   @include mediaWidth($widthTablet) {
     width: 350px;
-    height: 400px;
+    height: 345px;
     margin: 0 10px 0 10px;
+  }
+  @include mediaWidth($widthLg) {
+    width: 40vw;
+    height: 340px;
   }
   @include mediaWidth($widthPhone) {
     width: 40vw;
@@ -316,8 +324,12 @@
   width: 500px;
   height: 500px;
   object-fit: cover;
+  @include mediaWidth($widthLg) {
+    width: 55vw;
+    height: 500px;
+  }
   @include mediaWidth($widthPhone) {
-    width: 400px;
+    width: 60vw;
     height: 450px;
   }
   @include mediaWidth($widthXs) {
@@ -327,6 +339,13 @@
 }
 #slider ol.carousel-indicators li.active{
   background-color: #eeeeee;
+}
+.sl-text{
+  color: #ffffff;
+  font-weight: 600;
+}
+.sl-text--bold{
+  font-weight: 400;
 }
 
 //contacts
@@ -339,7 +358,6 @@
     flex-direction: column;
   }
   @include mediaWidth($widthXs) {
-    flex-direction: column;
     justify-content: space-between;
   }
 }
@@ -350,6 +368,9 @@
   position: absolute;
   z-index: 2;
   padding: 15px 20px;
+  @include mediaWidth($widthLg) {
+   width: 300px;
+  }
   @include mediaWidth($widthPhone) {
     position: relative;
     width: 100%;
@@ -443,10 +464,10 @@
   width: 100%;
   height: 600px;
   @include mediaWidth($widthPhone) {
-    height: 350px;
+    height: 450px;
   }
   @include mediaWidth($widthXs) {
-    height: 300px;
+    height: 400px;
   }
 }
 

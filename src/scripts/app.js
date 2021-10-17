@@ -78,6 +78,8 @@ if ( document.URL !== "http://localhost:3000/" ) {
 }
 */
 
+/*
 let date = new Date();
 let footerDate = document.querySelector('.footer__date').innerHTML = '2020 - ' + date.getFullYear();
 
+*/
