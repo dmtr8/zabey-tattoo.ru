@@ -1,16 +1,16 @@
 @import "scss/vars";
-@import "scss/index";
 @import "scss/layout";
-@import "scss/about";
+@import "scss/index";
+@import "scss/masters";
+@import "scss/recording";
+@import "scss/sketch";
 @import "scss/faq";
+@import "scss/about";
 
 //npm -g uninstall bootstrap-icons
 
 @import "../../node_modules/normalize.css/normalize.css";
 @import '../../node_modules/bootstrap/dist/css/bootstrap.min.css';
-
-
-
 
 //@import '../../node_modules/owl.carousel/dist/assets/owl.carousel.min.css';
 //@import '../../node_modules/owl.carousel/dist/assets/owl.theme.default.min.css';

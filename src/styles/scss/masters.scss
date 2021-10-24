@@ -1,0 +1,101 @@
+//card
+.master-section{
+  width: auto;
+  height: 500px;
+  //background: linear-gradient(90deg, #DAE2F8 0%, #D6A4A4 100%);
+  @include mediaWidth($widthPhone) {
+    background: none;
+  }
+  @include mediaWidth($widthXs) {
+    background: none;
+  }
+}
+.wrap-master-section{
+  width: auto;
+  height: 500px;
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+  @include mediaWidth($widthPhone) {
+    height: auto;
+  }
+}
+.master-card-name{
+  font-size: 30px;
+  font-weight: bold;
+  color: #404040;
+  @include mediaWidth($widthPhone) {
+    font-size: 20px;
+  }
+}
+.master-card-sector{
+  font-size: 20px;
+  color: #313131;
+  @include mediaWidth($widthPhone) {
+    font-size: 16px;
+  }
+}
+.master-card-desc{
+  white-space: pre-wrap;
+  font-size: 16px;
+  color: #404040;
+  @include mediaWidth($widthPhone) {
+    font-size: 14px;
+  }
+}
+.master-card-inst{
+  width: 40px;
+  height: 40px;
+  background-color: #0a53be;
+}
+.master-card-inst--margin-top{
+  margin-top: 50px;
+}
+.master__photo--size{
+  border-radius: 0;
+  width: 255px;
+  height: 350px;
+  @include mediaWidth($widthPhone) {
+    width: 200px;
+    height: 255px;
+    margin-left: 45px;
+  }
+}
+.master__photo--height{
+  height: 100%;
+}
+.wrap-master-section .card.card-desktop{
+  width: 750px;
+}
+.wrap-master-section .card.card-mobile{
+  width: 18rem;
+  @include mediaWidth($widthPhone) {
+    box-shadow: 0px 46px 268px rgba(69, 141, 184, 0.46), 0px 13.8677px 80.7942px rgba(69, 141, 184, 0.299731), 0px 5.75991px 33.5578px rgba(69, 141, 184, 0.23), 0px 2.08325px 12.1372px rgba(69, 141, 184, 0.160269);
+  }
+}
+
+//reviews
+.reviews{
+  //background: linear-gradient(90deg, #CC95C0 0%, #DBD4B4 50%, #7AA1D2 100%);
+  overflow: auto;
+  height: 500px;
+}
+.reviews__author{
+  margin-block-start: 0;
+  margin-block-end: 0;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 500;
+  @include mediaWidth($widthPhone) {
+    font-size: 14px;
+  }
+}
+.reviews__text{
+  @include mediaWidth($widthPhone) {
+    font-size: 16px;
+  }
+}
+//form-review
+.form-review{
+  height:450px;
+}

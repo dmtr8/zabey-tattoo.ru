@@ -1,7 +1,7 @@
 extends include/layout
 append sharedVars
     - const pageUrl = '/';
-    - const pageTitle = 'Главная';
+    - const pageTitle = 'Zaбей - студия татуировки в Туле';
     - const bodyAdditionClass = '';
     - const pageAdditionClass = 'main-page';
 block content
@@ -28,14 +28,14 @@ block content
             div.services__box.services__box--m-b
                 p.services__title ИНДИВИДУАЛЬНЫЙ ЭСКИЗ
                 p.services__title.services__title--mobile ЭСКИЗ
-                a(href='/')
+                a(href='sketch.html')
                     div.services__block-decor
                         div.services__circle
                         img(src=require("../images/index/sketch.svg") alt="sketch img")
             div.services__box
                 p.services__title ХУДОЖЕСТВЕННАЯ ТАТУИРОВКА
                 p.services__title.services__title--mobile ТАТУИРОВКА
-                a(href='/')
+                a(href='recording.html')
                     div.services__block-decor
                         div.services__circle
                         img(src=require("../images/index/tattoo.svg") alt="tattoo img")
@@ -47,21 +47,21 @@ block content
                         div.master__wrapper
                             p.master__name Ксения
                             p.master__specialty цветная татуировка
-                            a(href='/')
+                            a(href='osipova.html')
                                 button.master__button ПОДРОБНЕЕ
                     div.master
                         img.master__photo(src=require("../images/index/kovaleva.jpg") alt="master photo")
                         div.master__wrapper
                             p.master__name Мария
                             p.master__specialty графика
-                            a(href='/')
+                            a(href='kovaleva.html')
                                 button.master__button ПОДРОБНЕЕ
                     div.master
                         img.master__photo(src=require("../images/index/volkova.jpg") alt="master photo")
                         div.master__wrapper
                             p.master__name Ксения
                             p.master__specialty черно-белый реализм
-                            a(href='/')
+                            a(href='volkova.html')
                                 button.master__button ПОДРОБНЕЕ
         h2 ПОСЛЕДНИЕ РАБОТЫ
         div.container

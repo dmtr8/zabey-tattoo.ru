@@ -1,0 +1,98 @@
+extends include/layout
+append sharedVars
+    - const pageUrl = '/';
+    - const pageTitle = 'Ковалева';
+    - const bodyAdditionClass = '';
+    - const pageAdditionClass = 'main-page';
+block content
+    section.inner
+        h2.title-style-other-pages Мастер
+    section.master-section
+        div.inner
+            div.wrap-master-section
+                div.card.card-desktop.mx-auto.d-none.d-md-block
+                    div.row
+                        div.col-md-7.col-sm-4
+                            div.card-body
+                                p.card-title.master-card-name Мария
+                                p.card-text.master-card-sector Графика
+                                p.card-text.master-card-desc Меня зовут Мария Ковалёва, и я с радостью помогу тебе сделать татуировку своей мечты! Работаю мастером татуировки в целом уже более 6 лет, а последние 4 года - в самой уютной студии Забей, в самом лучшем коллективе. Я - универсал, могу работать во многих техниках, но отдаю предпочтение графике и лайнворку. Наглядно покажу тебе какими кайфовыми могут быть контура! До встречи на сеансе!
+                                a(href="https://www.instagram.com/m.kovaleva.tattoo/" target='_blank')
+                                    img.master-card-inst(src=require("../images/index/instagram.svg"))
+                        div.col-md-5.p-4.col-sm-6
+                            img.master__photo.master__photo--size.master__photo--height(src=require("../images/index/kovaleva.jpg"))
+                div.card.card-mobile.d-block.d-md-none.mx-auto
+                    img.master__photo.master__photo--size.card-img-top(src=require("../images/index/kovaleva.jpg"))
+                    div.card-body
+                        p.card-title.master-card-name Мария
+                        p.card-text.master-card-sector Графика
+                        p.card-text.master-card-desc Меня зовут Мария Ковалёва, и я с радостью помогу тебе сделать татуировку своей мечты! Работаю мастером татуировки в целом уже более 6 лет, а последние 4 года - в самой уютной студии Забей, в самом лучшем коллективе. Я - универсал, могу работать во многих техниках, но отдаю предпочтение графике и лайнворку. Наглядно покажу тебе какими кайфовыми могут быть контура! До встречи на сеансе!
+                        a(href="https://www.instagram.com/m.kovaleva.tattoo/" target='_blank')
+                            img.master-card-inst(src=require("../images/index/instagram.svg"))
+            h2 последние работы
+            div.master-last-work
+                div.container
+                    div.row
+                        div.col-10.mx-auto
+                            div#slider.carousel.carousel-dark.slide(data-ride="carousel")
+                                ol.carousel-indicators
+                                    li.active(data-target="#slider" data-slide-to="0")
+                                    li(data-target="#slider" data-slide-to="1")
+                                    li(data-target="#slider" data-slide-to="2")
+                                    li(data-target="#slider" data-slide-to="3")
+                                    li(data-target="#slider" data-slide-to="4")
+                                    li(data-target="#slider" data-slide-to="5")
+                                    li(data-target="#slider" data-slide-to="6")
+                                    li(data-target="#slider" data-slide-to="7")
+                                    li(data-target="#slider" data-slide-to="8")
+                                div.carousel-inner
+                                    div.carousel-item.active
+                                        img.img-slider.d-block.mx-auto(src=require("../images/lastwork/b.jpg"))
+                                    div.carousel-item
+                                        img.img-slider.d-block.mx-auto(src=require("../images/lastwork/e.jpg"))
+                                    div.carousel-item
+                                        img.img-slider.d-block.mx-auto(src=require("../images/lastwork/h.jpg"))
+                                a.carousel-control-prev(href='#slider' role="button" data-slide="prev")
+                                    span.carousel-control-prev-icon(aria-hidden="true")
+                                    span.sr-only Previous
+                                a.carousel-control-next(href='#slider' role="button" data-slide="next")
+                                    span.carousel-control-next-icon(aria-hidden="true")
+                                    span.sr-only Next
+            h2 отзывы
+            section.reviews
+                div.container
+                    div.row
+                        div.col-12
+                            div.card.w-75.mx-auto.mt-2.mb-2
+                                div.card-body
+                                    p.card-text.reviews__text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi cumque dolorem earum est incidunt magni minima mollitia nemo quas tenetur.
+                                    p.card-text.reviews__author Григорий
+                                    p.card-text.reviews__author verslibre.fm@gmail.com
+                                    p.card-text.reviews__author 23:14 07/02/2021
+                            div.card.w-75.mx-auto.mt-2.mb-2
+                                div.card-body
+                                    p.card-text.reviews__text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi cumque dolorem earum est incidunt magni minima mollitia nemo quas tenetur.
+                                    p.card-text.reviews__author Антон
+                                    p.card-text.reviews__author verslibre.fm@gmail.com
+                                    p.card-text.reviews__author 23:14 07/02/2021
+                            div.card.w-75.mx-auto.mt-2.mb-2
+                                div.card-body
+                                    p.card-text.reviews__text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum debitis, delectus error eveniet excepturi iusto natus nemo nostrum numquam optio provident saepe sapiente ut velit voluptatem! Iusto quibusdam quidem rem repellendus voluptate. Ad, animi consequuntur corporis cumque cupiditate dicta dolorem doloremque ea eligendi fugit id incidunt iusto laborum laudantium libero maxime, minus modi nam neque, non numquam quasi quibusdam quo repellat sapiente sequi similique tempora tempore temporibus totam! Debitis libero magni suscipit. Atque beatae esse itaque iure labore minus odio placeat praesentium, quibusdam quidem saepe similique tempora. Adipisci, magnam placeat!
+                                    p.card-text.reviews__author Григорий
+                                    p.card-text.reviews__author verslibre.fm@gmail.com
+                                    p.card-text.reviews__author 23:14 07/02/2021
+                            div.card.w-75.mx-auto.mt-2.mb-2
+                                div.card-body
+                                    p.card-text.reviews__text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi cumque dolorem earum est incidunt magni minima mollitia nemo quas tenetur.
+                                    p.card-text.reviews__author Антон
+                                    p.card-text.reviews__author verslibre.fm@gmail.com
+                                    p.card-text.reviews__author 23:14 07/02/2021
+                            div.card.w-75.mx-auto.mt-2.mb-2
+                                div.card-body
+                                    p.card-text.reviews__text Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi cumque dolorem earum est incidunt magni minima mollitia nemo quas tenetur.
+                                    p.card-text.reviews__author Григорий
+                                    p.card-text.reviews__author verslibre.fm@gmail.com
+                                    p.card-text.reviews__author 23:14 07/02/2021
+
+
+            h2 Оставить отзыв

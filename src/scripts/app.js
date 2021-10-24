@@ -8,8 +8,6 @@ require('animejs');
 require('bootstrap');
 require('jquery')
 
-
-
 let textAnimation = document.querySelectorAll('.text-item--animation');
 
 window.addEventListener('load', function () {
