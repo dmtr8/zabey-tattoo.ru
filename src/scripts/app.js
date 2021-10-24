@@ -5,9 +5,10 @@
 import anime from 'animejs/lib/anime.es.js';
 require('animejs');
 
-import Vue from 'vue';
 require('bootstrap');
-require('jquery');
+require('jquery')
+
+
 
 let textAnimation = document.querySelectorAll('.text-item--animation');
 

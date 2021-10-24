@@ -39,6 +39,17 @@ h2{
     margin: 65px 0 35px 0;
   }
 }
+.title-style-other-pages{
+  text-align: left;
+  margin: 70px 0 70px 250px;
+  @include mediaWidth($widthLg) {
+    text-align: center;
+    margin: 35px 0 35px 0;
+  }
+  @include mediaWidth($widthXs) {
+    font-size: 35px;
+  }
+}
 a{
   text-decoration: none;
   &:hover{

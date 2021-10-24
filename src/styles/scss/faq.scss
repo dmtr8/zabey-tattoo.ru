@@ -1,0 +1,39 @@
+a.card-title{
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  color: #3784f8;
+  display: inline-block;
+  margin-top: 10px;
+  &:hover{
+    color:#0d6efd;
+  }
+  @include mediaWidth($widthPhone) {
+    font-size: 14px;
+  }
+}
+.card-block__wrapper{
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 0.4px;
+  color: $colorBlack;
+  padding: 10px;
+  @include mediaWidth($widthPhone) {
+    font-size: 15px;
+    letter-spacing: 0.3px;
+  }
+}
+.accordion .card-header:after{
+  content: "\2212";
+  float: right;
+  font-weight: bold;
+  font-size: 30px;
+  color: rgba(14, 88, 158, 0.82);
+  display: inline;
+}
+.accordion .card-header.collapsed:after{
+  content: "\002B";
+  color: #7AA1D2;
+}
