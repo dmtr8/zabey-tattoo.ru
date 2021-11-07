@@ -47,25 +47,6 @@ but.forEach(function (elem){
     });
 });
 
-/*
-let but = document.querySelectorAll('.master');
-let mB = document.querySelectorAll('.master__button');
-let clW = document.documentElement.clientWidth;
-
-but.forEach(function (elem){
-    let cur = elem.closest('div').querySelector('.master__button');
-    if (clW >= 993){
-        elem.addEventListener('mouseover', function (e) {
-            cur.style.display = "block"
-        });
-        elem.addEventListener('mouseout', function (e) {
-            cur.style.display = "none"
-        });
-    }else {
-        cur.style.display = "block";
-    }
-});
-*/
 
 /*
 

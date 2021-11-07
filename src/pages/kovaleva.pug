@@ -7,28 +7,16 @@ append sharedVars
 block content
     section.inner
         h2.title-style-other-pages Мастер
-    section.master-section
         div.inner
-            div.wrap-master-section
-                div.card.card-desktop.mx-auto.d-none.d-md-block
-                    div.row
-                        div.col-md-7.col-sm-4
-                            div.card-body
-                                p.card-title.master-card-name Мария
-                                p.card-text.master-card-sector Графика
-                                p.card-text.master-card-desc Меня зовут Мария Ковалёва, и я с радостью помогу тебе сделать татуировку своей мечты! Работаю мастером татуировки в целом уже более 6 лет, а последние 4 года - в самой уютной студии Забей, в самом лучшем коллективе. Я - универсал, могу работать во многих техниках, но отдаю предпочтение графике и лайнворку. Наглядно покажу тебе какими кайфовыми могут быть контура! До встречи на сеансе!
-                                a(href="https://www.instagram.com/m.kovaleva.tattoo/" target='_blank')
-                                    img.master-card-inst(src=require("../images/index/instagram.svg"))
-                        div.col-md-5.p-4.col-sm-6
-                            img.master__photo.master__photo--size.master__photo--height(src=require("../images/index/kovaleva.jpg"))
-                div.card.card-mobile.d-block.d-md-none.mx-auto
-                    img.master__photo.master__photo--size.card-img-top(src=require("../images/index/kovaleva.jpg"))
-                    div.card-body
-                        p.card-title.master-card-name Мария
-                        p.card-text.master-card-sector Графика
-                        p.card-text.master-card-desc Меня зовут Мария Ковалёва, и я с радостью помогу тебе сделать татуировку своей мечты! Работаю мастером татуировки в целом уже более 6 лет, а последние 4 года - в самой уютной студии Забей, в самом лучшем коллективе. Я - универсал, могу работать во многих техниках, но отдаю предпочтение графике и лайнворку. Наглядно покажу тебе какими кайфовыми могут быть контура! До встречи на сеансе!
-                        a(href="https://www.instagram.com/m.kovaleva.tattoo/" target='_blank')
-                            img.master-card-inst(src=require("../images/index/instagram.svg"))
+            div.master-container.mx-auto
+                div.master-box
+                    div.master-box__text-content
+                        p.master-box__name Мария
+                            span.master-box__profession  / Графика
+                    p.master-box__description Меня зовут Мария Ковалёва, и я с радостью помогу тебе сделать татуировку своей мечты! Работаю мастером татуировки в целом уже более 6 лет, а последние 4 года - в самой уютной студии Забей, в самом лучшем коллективе. Я - универсал, могу работать во многих техниках, но отдаю предпочтение графике и лайнворку. Наглядно покажу тебе какими кайфовыми могут быть контура! До встречи на сеансе!
+                    a(href="https://www.instagram.com/m.kovaleva.tattoo/" target='_blank')
+                        img.master-box__inst(src=require("../images/masters/instagram.svg"))
+                img.master__photo.master__photo--size(src=require("../images/index/kovaleva.jpg"))
             h2 последние работы
             div.master-last-work
                 div.container
@@ -93,6 +81,4 @@ block content
                                     p.card-text.reviews__author Григорий
                                     p.card-text.reviews__author verslibre.fm@gmail.com
                                     p.card-text.reviews__author 23:14 07/02/2021
-
-
             h2 Оставить отзыв

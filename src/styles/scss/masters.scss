@@ -1,81 +1,120 @@
-//card
-.master-section{
-  width: auto;
-  height: 500px;
-  //background: linear-gradient(90deg, #DAE2F8 0%, #D6A4A4 100%);
+//master card
+.master-container{
+  width: 60vw;
+  height: auto;
+  padding: 25px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border: none;
+  background-color: #ffffff;
+  box-shadow: 0px 9px 99px rgba(0, 77, 148, 0.21), 0px 3.69781px 42.2672px rgba(0, 77, 148, 0.125183), 0px 2.08955px 38.3532px rgba(0, 77, 148, 0.0848175);
+  @include mediaWidth(1250) {
+    width: 65vw;
+  }
+  @include mediaWidth($widthTablet) {
+    width: 80vw;
+  }
+  @include mediaWidth($widthLg) {
+    width: 90vw;
+  }
   @include mediaWidth($widthPhone) {
-    background: none;
+    width: 96vw;
+  }
+  @include mediaWidth(680) {
+    width: 80vw;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+}
+.master-box{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  @include mediaWidth(680) {
+    align-items: center;
+    width: 100%;
+    padding-top: 20px;
+  }
+}
+.master-box__name{
+  font-size: 30px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  color: $colorBlack;
+  @include mediaWidth($widthLg) {
+    font-size: 25px;
+  }
+  @include mediaWidth(680) {
+    text-align: center;
+    font-size: 22px;
   }
   @include mediaWidth($widthXs) {
-    background: none;
-  }
-}
-.wrap-master-section{
-  width: auto;
-  height: 500px;
-  display: flex;
-  flex-direction:column;
-  justify-content: center;
-  align-items: center;
-  @include mediaWidth($widthPhone) {
-    height: auto;
-  }
-}
-.master-card-name{
-  font-size: 30px;
-  font-weight: bold;
-  color: #404040;
-  @include mediaWidth($widthPhone) {
     font-size: 20px;
   }
 }
-.master-card-sector{
+.master-box__profession{
   font-size: 20px;
-  color: #313131;
-  @include mediaWidth($widthPhone) {
+  color: #66666d;
+  font-weight: 400;
+  letter-spacing: 1px;
+  @include mediaWidth(680) {
+    font-size: 18px;
+  }
+  @include mediaWidth($widthXs) {
     font-size: 16px;
   }
 }
-.master-card-desc{
+.master-box__description{
   white-space: pre-wrap;
   font-size: 16px;
   color: #404040;
+  width: 450px;
+  letter-spacing: 0.5px;
+  @include mediaWidth($widthTablet) {
+    width: 45vw;
+  }
+  @include mediaWidth($widthLg) {
+    width: 50vw;
+  }
   @include mediaWidth($widthPhone) {
+    font-size: 15px;
+  }
+  @include mediaWidth(680) {
+    width: 90%;
+  }
+  @include mediaWidth($widthXs) {
     font-size: 14px;
   }
 }
-.master-card-inst{
+.master-box a{
+  width: 40px;
+}
+.master-box__inst{
   width: 40px;
   height: 40px;
-  background-color: #0a53be;
-}
-.master-card-inst--margin-top{
-  margin-top: 50px;
 }
 .master__photo--size{
   border-radius: 0;
-  width: 255px;
+  width: 250px;
   height: 350px;
-  @include mediaWidth($widthPhone) {
-    width: 200px;
-    height: 255px;
-    margin-left: 45px;
+  @include mediaWidth($widthTablet) {
+    width: 27vw;
   }
-}
-.master__photo--height{
-  height: 100%;
-}
-.wrap-master-section .card.card-desktop{
-  width: 750px;
-}
-.wrap-master-section .card.card-mobile{
-  width: 18rem;
+  @include mediaWidth($widthLg) {
+    width: 30vw;
+  }
   @include mediaWidth($widthPhone) {
-    box-shadow: 0px 46px 268px rgba(69, 141, 184, 0.46), 0px 13.8677px 80.7942px rgba(69, 141, 184, 0.299731), 0px 5.75991px 33.5578px rgba(69, 141, 184, 0.23), 0px 2.08325px 12.1372px rgba(69, 141, 184, 0.160269);
+    width: 35vw;
+  }
+  @include mediaWidth(680) {
+    width: 90%;
+    height: 300px;
   }
 }
 
 //reviews
+
 .reviews{
   //background: linear-gradient(90deg, #CC95C0 0%, #DBD4B4 50%, #7AA1D2 100%);
   overflow: auto;

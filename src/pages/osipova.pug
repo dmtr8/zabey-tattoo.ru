@@ -7,58 +7,67 @@ append sharedVars
 block content
     section.inner
         h2.title-style-other-pages Мастер
-    section.master-section
         div.inner
-            div.wrap-master-section
-                div.card.card-desktop.mx-auto.d-none.d-md-block
-                    div.row
-                        div.col-md-7.col-sm-4
-                            div.card-body
-                                p.card-title.master-card-name Ксения
-                                p.card-text.master-card-sector Цветная татуировка
-                                p.card-text.master-card-desc Уважаю Ваш выбор тату и всегда готова подсказать лучшие варианты реализации. Предпочитаю работы в стилях акварель и графика. Хочу, чтобы по улицам нашего города ходили как можно больше людей с качественными и уникальными изображениями на теле! Без проблем сделаю перекрытие старой тату или замаскирую шрам!
-                                a(href="https://www.instagram.com/_oktattoo_/" target='_blank')
-                                    img.master-card-inst(src=require("../images/index/instagram.svg"))
-                        div.col-md-5.p-4.col-sm-6
-                            img.master__photo.master__photo--size(src=require("../images/index/osipova.jpg"))
-                div.card.card-mobile.d-block.d-md-none.mx-auto
-                    img.master__photo.master__photo--size.card-img-top(src=require("../images/index/osipova.jpg"))
-                    div.card-body
-                        p.card-title.master-card-name Ксения
-                        p.card-text.master-card-sector Цветная татуировка
-                        p.card-text.master-card-desc Уважаю Ваш выбор тату и всегда готова подсказать лучшие варианты реализации. Предпочитаю работы в стилях акварель и графика. Хочу, чтобы по улицам нашего города ходили как можно больше людей с качественными и уникальными изображениями на теле! Без проблем сделаю перекрытие старой тату или замаскирую шрам!
-                        a(href="https://www.instagram.com/_oktattoo_/" target='_blank')
-                            img.master-card-inst(src=require("../images/index/instagram.svg"))
-            h2 последние работы
+            div.master-container.mx-auto
+                div.master-box
+                    div.master-box__text-content
+                        p.master-box__name Ксения
+                            span.master-box__profession  / Цветная татуировка
+                    p.master-box__description Уважаю Ваш выбор тату и всегда готова подсказать лучшие варианты реализации. Предпочитаю работы в стилях акварель и графика. Хочу, чтобы по улицам нашего города ходили как можно больше людей с качественными и уникальными изображениями на теле! Без проблем сделаю перекрытие старой тату или замаскирую шрам!
+                    a(href="https://www.instagram.com/_oktattoo_/" target='_blank')
+                        img.master-box__inst(src=require("../images/masters/instagram.svg"))
+                img.master__photo.master__photo--size(src=require("../images/index/osipova.jpg"))
+            h2 Последние работы
             div.master-last-work
                 div.container
                     div.row
                         div.col-10.mx-auto
-                            div#slider.carousel.carousel-dark.slide(data-ride="carousel")
+                            div#slider.carousel.carousel-dark.slide(data-bs-ride="carousel")
                                 ol.carousel-indicators
-                                    li.active(data-target="#slider" data-slide-to="0")
-                                    li(data-target="#slider" data-slide-to="1")
-                                    li(data-target="#slider" data-slide-to="2")
-                                    li(data-target="#slider" data-slide-to="3")
-                                    li(data-target="#slider" data-slide-to="4")
-                                    li(data-target="#slider" data-slide-to="5")
-                                    li(data-target="#slider" data-slide-to="6")
-                                    li(data-target="#slider" data-slide-to="7")
-                                    li(data-target="#slider" data-slide-to="8")
+                                    li.active(data-bs-target="#slider" data-bs-slide-to="0")
+                                    li(data-bs-target="#slider" data-bs-slide-to="1")
+                                    li(data-bs-target="#slider" data-bs-slide-to="2")
+                                    li(data-bs-target="#slider" data-bs-slide-to="3")
+                                    li(data-bs-target="#slider" data-bs-slide-to="4")
+                                    li(data-bs-target="#slider" data-bs-slide-to="5")
+                                    li(data-bs-target="#slider" data-bs-slide-to="6")
+                                    li(data-bs-target="#slider" data-bs-slide-to="7")
+                                    li(data-bs-target="#slider" data-bs-slide-to="8")
                                 div.carousel-inner
                                     div.carousel-item.active
-                                        img.img-slider.d-block.mx-auto(src=require("../images/lastwork/a.jpg"))
+                                        img.img-slider.d-block.mx-auto(src=require("../images/lastwork/a.jpg") alt="last work photo")
+                                        div.carousel-caption.d-none.d-md-block
                                     div.carousel-item
-                                        img.img-slider.d-block.mx-auto(src=require("../images/lastwork/d.jpg"))
+                                        img.img-slider.d-block.mx-auto(src=require("../images/lastwork/b.jpg") alt="last work photo")
+                                        div.carousel-caption.d-none.d-md-block
                                     div.carousel-item
-                                        img.img-slider.d-block.mx-auto(src=require("../images/lastwork/g.jpg"))
-                                a.carousel-control-prev(href='#slider' role="button" data-slide="prev")
+                                        img.img-slider.d-block.mx-auto(src=require("../images/lastwork/c.jpg") alt="last work photo")
+                                        div.carousel-caption.d-none.d-md-block
+                                    div.carousel-item
+                                        img.img-slider.d-block.mx-auto(src=require("../images/lastwork/d.jpg") alt="last work photo")
+                                        div.carousel-caption.d-none.d-md-block
+                                    div.carousel-item
+                                        img.img-slider.d-block.mx-auto(src=require("../images/lastwork/e.jpg") alt="last work photo")
+                                        div.carousel-caption.d-none.d-md-block
+                                    div.carousel-item
+                                        img.img-slider.d-block.mx-auto(src=require("../images/lastwork/f.jpg") alt="last work photo")
+                                        div.carousel-caption.d-none.d-md-block
+                                    div.carousel-item
+                                        img.img-slider.d-block.mx-auto(src=require("../images/lastwork/g.jpg") alt="last work photo")
+                                        div.carousel-caption.d-none.d-md-block
+                                    div.carousel-item
+                                        img.img-slider.d-block.mx-auto(src=require("../images/lastwork/h.jpg") alt="last work photo")
+                                        div.carousel-caption.d-none.d-md-block
+                                    div.carousel-item
+                                        img.img-slider.d-block.mx-auto(src=require("../images/lastwork/b.jpg") alt="last work photo")
+                                        div.carousel-caption.d-none.d-md-block
+                                button.d-none.d-lg-block.carousel-control-prev(type="button" data-bs-target="#slider"  data-bs-slide="prev")
                                     span.carousel-control-prev-icon(aria-hidden="true")
-                                    span.sr-only Previous
-                                a.carousel-control-next(href='#slider' role="button" data-slide="next")
+                                    span.sr-only
+                                button.d-none.d-lg-block.carousel-control-next(type="button" data-bs-target="#slider"  data-bs-slide="next")
                                     span.carousel-control-next-icon(aria-hidden="true")
-                                    span.sr-only Next
-            h2 отзывы
+                                    span.sr-only
+            h2 Отзывы
             section.reviews
                 div.container
                     div.row

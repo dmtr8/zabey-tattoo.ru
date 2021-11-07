@@ -7,9 +7,17 @@ append sharedVars
 block content
     section.inner
         h2.title-style-other-pages Мастер
-    section.master-section
         div.inner
-            div.wrap-master-section
+            div.master-container.mx-auto
+                div.master-box
+                    div.master-box__text-content
+                        p.master-box__name Ксения
+                            span.master-box__profession  / Черно-белый реализм
+                    p.master-box__description
+                    a(href="https://www.instagram.com/plagintattoo/" target='_blank')
+                        img.master-box__inst(src=require("../images/masters/instagram.svg"))
+                img.master__photo.master__photo--size(src=require("../images/index/volkova.jpg"))
+            //div.wrap-master-section
                 div.card.card-desktop.mx-auto.d-none.d-md-block
                     div.row
                         div.col-md-7.col-sm-4
@@ -21,14 +29,6 @@ block content
                                     img.master-card-inst.master-card-inst--margin-top(src=require("../images/index/instagram.svg"))
                         div.col-md-5.p-4.col-sm-6
                             img.master__photo.master__photo--size(src=require("../images/index/volkova.jpg"))
-                div.card.card-mobile.d-block.d-md-none.mx-auto
-                    img.master__photo.master__photo--size.card-img-top(src=require("../images/index/volkova.jpg"))
-                    div.card-body
-                        p.card-title.master-card-name Ксения
-                        p.card-text.master-card-sector Цветная татуировка
-                        p.card-text.master-card-desc Уважаю Ваш выбор тату и всегда готова подсказать лучшие варианты реализации. Предпочитаю работы в стилях акварель и графика. Хочу, чтобы по улицам нашего города ходили как можно больше людей с качественными и уникальными изображениями на теле! Без проблем сделаю перекрытие старой тату или замаскирую шрам!
-                        a(href="https://www.instagram.com/plagintattoo/" target='_blank')
-                            img.master-card-inst(src=require("../images/index/instagram.svg"))
             h2 последние работы
             div.master-last-work
                 div.container
